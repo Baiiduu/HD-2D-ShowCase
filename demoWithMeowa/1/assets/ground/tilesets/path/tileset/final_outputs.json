@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "job_id": "job_93b68854513247be97fb58ebc0dba371",
+  "outputs": [
+    {
+      "type": "media",
+      "path": "assets\\ground\\tilesets\\path\\tileset\\tileset.png",
+      "mime_type": "image/png"
+    }
+  ]
+}

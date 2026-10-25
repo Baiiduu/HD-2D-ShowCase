@@ -1,0 +1,27 @@
+{
+  "status": "success",
+  "job_id": "job_858f7983347346b498e4a9ca90457ebf",
+  "manifest_role": "Local game deliverables; derived entries were processed locally, not returned by Meowa.",
+  "outputs": [
+    {
+      "type": "media",
+      "path": "D:\\Project\\HD-2DMap\\demoWithMeowa\\1\\assets\\meowa\\weather\\rain_source.mp3",
+      "mime_type": "audio/mpeg",
+      "role": "unchanged Meowa final output"
+    },
+    {
+      "type": "derived_audio",
+      "path": "D:\\Project\\HD-2DMap\\demoWithMeowa\\1\\assets\\meowa\\weather\\rain.wav",
+      "mime_type": "audio/wav",
+      "source": "D:\\Project\\HD-2DMap\\demoWithMeowa\\1\\assets\\meowa\\weather\\rain_source.mp3",
+      "processing_record": "D:\\Project\\HD-2DMap\\demoWithMeowa\\1\\assets\\meowa\\weather\\rain-processing.json"
+    },
+    {
+      "type": "derived_audio",
+      "path": "D:\\Project\\HD-2DMap\\docs\\weather-preview\\rain-soft.wav",
+      "mime_type": "audio/wav",
+      "source": "D:\\Project\\HD-2DMap\\demoWithMeowa\\1\\assets\\meowa\\weather\\rain.wav",
+      "role": "Actual steady game-level playback capture"
+    }
+  ]
+}

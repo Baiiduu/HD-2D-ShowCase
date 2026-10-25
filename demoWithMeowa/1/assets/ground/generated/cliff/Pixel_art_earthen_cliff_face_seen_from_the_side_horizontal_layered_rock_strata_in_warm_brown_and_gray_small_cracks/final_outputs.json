@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "job_id": "job_63e917582cb74671a8b150a13516d7e0",
+  "outputs": [
+    {
+      "type": "media",
+      "path": "assets\\ground\\generated\\cliff\\Pixel_art_earthen_cliff_face_seen_from_the_side_horizontal_layered_rock_strata_in_warm_brown_and_gray_small_cracks\\texture.png",
+      "mime_type": "image/png"
+    }
+  ]
+}

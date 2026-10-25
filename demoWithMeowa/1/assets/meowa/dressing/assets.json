@@ -1,0 +1,433 @@
+{
+  "source": "Meowa",
+  "count": 18,
+  "canvas": [
+    48,
+    48
+  ],
+  "anchor": [
+    24,
+    44
+  ],
+  "pixel_size": 0.0234375,
+  "processing": "Native crop and transparent padding; two pebble groups assembled from unchanged source pixels; no resampling or repainting.",
+  "assets": [
+    {
+      "id": "flowers_01",
+      "name": "双朵白色矮花",
+      "texture": "res://assets/meowa/dressing/flowers/flower_01.png",
+      "file": "flowers/flower_01.png",
+      "canvas": [
+        48,
+        48
+      ],
+      "visible_size": [
+        20,
+        16
+      ],
+      "anchor": [
+        24,
+        44
+      ],
+      "pixel_size": 0.0234375,
+      "sha256": "95924b97894cb1482d4fe82df543c0e333870f03bf2fe2b549f6546ab344a536",
+      "sources": [
+        "D:\\Project\\HD-2DMap\\artifacts\\ground-dressing\\small-white-clean\\component_001.png"
+      ]
+    },
+    {
+      "id": "flowers_02",
+      "name": "三朵粉色矮花",
+      "texture": "res://assets/meowa/dressing/flowers/flower_02.png",
+      "file": "flowers/flower_02.png",
+      "canvas": [
+        48,
+        48
+      ],
+      "visible_size": [
+        20,
+        19
+      ],
+      "anchor": [
+        24,
+        44
+      ],
+      "pixel_size": 0.0234375,
+      "sha256": "6ce7562f705f75781b57cbea9f3f58ab252a197eb18462674f751434c40ef63f",
+      "sources": [
+        "D:\\Project\\HD-2DMap\\artifacts\\ground-dressing\\small-pink-clean\\component_001.png"
+      ]
+    },
+    {
+      "id": "flowers_03",
+      "name": "簇生淡紫矮花",
+      "texture": "res://assets/meowa/dressing/flowers/flower_03.png",
+      "file": "flowers/flower_03.png",
+      "canvas": [
+        48,
+        48
+      ],
+      "visible_size": [
+        20,
+        20
+      ],
+      "anchor": [
+        24,
+        44
+      ],
+      "pixel_size": 0.0234375,
+      "sha256": "99d4659f36b10d974f36860f8dc1b1e669dd382fb7ad98c0cfc77d2cf080f5bc",
+      "sources": [
+        "D:\\Project\\HD-2DMap\\artifacts\\ground-dressing\\small-purple-clean\\component_001.png"
+      ]
+    },
+    {
+      "id": "flowers_04",
+      "name": "黄色细茎野花",
+      "texture": "res://assets/meowa/dressing/flowers/flower_04.png",
+      "file": "flowers/flower_04.png",
+      "canvas": [
+        48,
+        48
+      ],
+      "visible_size": [
+        29,
+        33
+      ],
+      "anchor": [
+        24,
+        44
+      ],
+      "pixel_size": 0.0234375,
+      "sha256": "727e620d2e7cc918b68d2abed6a408868edfbfcd9022beffb1535e7745b7333f",
+      "sources": [
+        "D:\\Project\\HD-2DMap\\artifacts\\ground-dressing\\components\\component_022.png"
+      ]
+    },
+    {
+      "id": "flowers_05",
+      "name": "蓝色双朵野花",
+      "texture": "res://assets/meowa/dressing/flowers/flower_05.png",
+      "file": "flowers/flower_05.png",
+      "canvas": [
+        48,
+        48
+      ],
+      "visible_size": [
+        28,
+        32
+      ],
+      "anchor": [
+        24,
+        44
+      ],
+      "pixel_size": 0.0234375,
+      "sha256": "e8ee321f867d9d44e36256d00d05a3ccb530e145fad43701280b7199b1b166ae",
+      "sources": [
+        "D:\\Project\\HD-2DMap\\artifacts\\ground-dressing\\components\\component_036.png"
+      ]
+    },
+    {
+      "id": "flowers_06",
+      "name": "红色野花与花苞",
+      "texture": "res://assets/meowa/dressing/flowers/flower_06.png",
+      "file": "flowers/flower_06.png",
+      "canvas": [
+        48,
+        48
+      ],
+      "visible_size": [
+        26,
+        33
+      ],
+      "anchor": [
+        24,
+        44
+      ],
+      "pixel_size": 0.0234375,
+      "sha256": "b2719066da2beca105551d09f99a99153af91d52eddd226271d6b7d40a36cd43",
+      "sources": [
+        "D:\\Project\\HD-2DMap\\artifacts\\ground-dressing\\components\\component_030.png"
+      ]
+    },
+    {
+      "id": "grass_01",
+      "name": "低矮疏草",
+      "texture": "res://assets/meowa/dressing/grass/grass_01.png",
+      "file": "grass/grass_01.png",
+      "canvas": [
+        48,
+        48
+      ],
+      "visible_size": [
+        33,
+        20
+      ],
+      "anchor": [
+        24,
+        44
+      ],
+      "pixel_size": 0.0234375,
+      "sha256": "ccf13be8cb2551af2063a00822fda5bafb8d1a04a60c0b6787d8fb7d9d5936a4",
+      "sources": [
+        "D:\\Project\\HD-2DMap\\artifacts\\ground-dressing\\components\\component_034.png"
+      ]
+    },
+    {
+      "id": "grass_02",
+      "name": "展开密草",
+      "texture": "res://assets/meowa/dressing/grass/grass_02.png",
+      "file": "grass/grass_02.png",
+      "canvas": [
+        48,
+        48
+      ],
+      "visible_size": [
+        34,
+        27
+      ],
+      "anchor": [
+        24,
+        44
+      ],
+      "pixel_size": 0.0234375,
+      "sha256": "42eced24c3cf27f1cb4add1e40e0360b721dced379da85a226fa308c63b88385",
+      "sources": [
+        "D:\\Project\\HD-2DMap\\artifacts\\ground-dressing\\components\\component_008.png"
+      ]
+    },
+    {
+      "id": "grass_03",
+      "name": "细长草叶",
+      "texture": "res://assets/meowa/dressing/grass/grass_03.png",
+      "file": "grass/grass_03.png",
+      "canvas": [
+        48,
+        48
+      ],
+      "visible_size": [
+        33,
+        34
+      ],
+      "anchor": [
+        24,
+        44
+      ],
+      "pixel_size": 0.0234375,
+      "sha256": "9d56189aaf70ffb82b5290fb679e432c32616cc6b195ee5af67d738e5fe9254f",
+      "sources": [
+        "D:\\Project\\HD-2DMap\\artifacts\\ground-dressing\\components\\component_009.png"
+      ]
+    },
+    {
+      "id": "grass_04",
+      "name": "羽叶杂草",
+      "texture": "res://assets/meowa/dressing/grass/grass_04.png",
+      "file": "grass/grass_04.png",
+      "canvas": [
+        48,
+        48
+      ],
+      "visible_size": [
+        36,
+        34
+      ],
+      "anchor": [
+        24,
+        44
+      ],
+      "pixel_size": 0.0234375,
+      "sha256": "2b9368dc1a0e4935231fb9bc2c0cd4f8b20c438d1f365dafa6a391471c157541",
+      "sources": [
+        "D:\\Project\\HD-2DMap\\artifacts\\ground-dressing\\components\\component_007.png"
+      ]
+    },
+    {
+      "id": "grass_05",
+      "name": "双茎阔叶草",
+      "texture": "res://assets/meowa/dressing/grass/grass_05.png",
+      "file": "grass/grass_05.png",
+      "canvas": [
+        48,
+        48
+      ],
+      "visible_size": [
+        24,
+        28
+      ],
+      "anchor": [
+        24,
+        44
+      ],
+      "pixel_size": 0.0234375,
+      "sha256": "2bf81838398feb61d36d2a019abca8c0abfb5cfa5d33779096305082217724bf",
+      "sources": [
+        "D:\\Project\\HD-2DMap\\artifacts\\ground-dressing\\components\\component_065.png"
+      ]
+    },
+    {
+      "id": "grass_06",
+      "name": "金黄枯草",
+      "texture": "res://assets/meowa/dressing/grass/grass_06.png",
+      "file": "grass/grass_06.png",
+      "canvas": [
+        48,
+        48
+      ],
+      "visible_size": [
+        29,
+        34
+      ],
+      "anchor": [
+        24,
+        44
+      ],
+      "pixel_size": 0.0234375,
+      "sha256": "eba75023393d2670e7f3a11e43db6be00836fdd65db3966d3d6eab48599cfaf2",
+      "sources": [
+        "D:\\Project\\HD-2DMap\\artifacts\\ground-dressing\\components\\component_015.png"
+      ]
+    },
+    {
+      "id": "pebbles_01",
+      "name": "暖灰扁石",
+      "texture": "res://assets/meowa/dressing/pebbles/pebble_01.png",
+      "file": "pebbles/pebble_01.png",
+      "canvas": [
+        48,
+        48
+      ],
+      "visible_size": [
+        10,
+        7
+      ],
+      "anchor": [
+        24,
+        44
+      ],
+      "pixel_size": 0.0234375,
+      "sha256": "69434e1141239d89d364dcc5a7362cf7535ba3b2aad3b5225d56aa36446992b5",
+      "sources": [
+        "D:\\Project\\HD-2DMap\\artifacts\\ground-dressing\\components\\component_084.png"
+      ]
+    },
+    {
+      "id": "pebbles_02",
+      "name": "小圆灰石",
+      "texture": "res://assets/meowa/dressing/pebbles/pebble_02.png",
+      "file": "pebbles/pebble_02.png",
+      "canvas": [
+        48,
+        48
+      ],
+      "visible_size": [
+        8,
+        7
+      ],
+      "anchor": [
+        24,
+        44
+      ],
+      "pixel_size": 0.0234375,
+      "sha256": "af694bb9e56ef3955426a6c86391239bdf7ed77a313e4fa5ec93b557ef1065f9",
+      "sources": [
+        "D:\\Project\\HD-2DMap\\artifacts\\ground-dressing\\components\\component_085.png"
+      ]
+    },
+    {
+      "id": "pebbles_03",
+      "name": "细扁灰石",
+      "texture": "res://assets/meowa/dressing/pebbles/pebble_03.png",
+      "file": "pebbles/pebble_03.png",
+      "canvas": [
+        48,
+        48
+      ],
+      "visible_size": [
+        8,
+        6
+      ],
+      "anchor": [
+        24,
+        44
+      ],
+      "pixel_size": 0.0234375,
+      "sha256": "0f6d56b2222b4233dd0d202a8e679f32b4d4481ed7c653609171d815268c2fa9",
+      "sources": [
+        "D:\\Project\\HD-2DMap\\artifacts\\ground-dressing\\components\\component_088.png"
+      ]
+    },
+    {
+      "id": "pebbles_04",
+      "name": "棱角灰石",
+      "texture": "res://assets/meowa/dressing/pebbles/pebble_04.png",
+      "file": "pebbles/pebble_04.png",
+      "canvas": [
+        48,
+        48
+      ],
+      "visible_size": [
+        11,
+        10
+      ],
+      "anchor": [
+        24,
+        44
+      ],
+      "pixel_size": 0.0234375,
+      "sha256": "31ab86441241de279ca32a9857c07ae7cbd75c33418ee51f4d525002f3dda230",
+      "sources": [
+        "D:\\Project\\HD-2DMap\\artifacts\\ground-dressing\\components\\component_079.png"
+      ]
+    },
+    {
+      "id": "pebbles_05",
+      "name": "两颗碎石",
+      "texture": "res://assets/meowa/dressing/pebbles/pebble_05.png",
+      "file": "pebbles/pebble_05.png",
+      "canvas": [
+        48,
+        48
+      ],
+      "visible_size": [
+        21,
+        10
+      ],
+      "anchor": [
+        24,
+        44
+      ],
+      "pixel_size": 0.0234375,
+      "sha256": "9b63f0ae95709c91c005a89538557b0ccf5ab9d60aeee6a4d320b20ac2f49d0b",
+      "sources": [
+        "D:\\Project\\HD-2DMap\\artifacts\\ground-dressing\\components\\component_084.png",
+        "D:\\Project\\HD-2DMap\\artifacts\\ground-dressing\\components\\component_085.png"
+      ]
+    },
+    {
+      "id": "pebbles_06",
+      "name": "三颗碎石",
+      "texture": "res://assets/meowa/dressing/pebbles/pebble_06.png",
+      "file": "pebbles/pebble_06.png",
+      "canvas": [
+        48,
+        48
+      ],
+      "visible_size": [
+        29,
+        11
+      ],
+      "anchor": [
+        24,
+        44
+      ],
+      "pixel_size": 0.0234375,
+      "sha256": "319e7d926ac7c0004fa20886d0c7537afdf0a83f11b977d2a9a76a92fbc2ffe1",
+      "sources": [
+        "D:\\Project\\HD-2DMap\\artifacts\\ground-dressing\\components\\component_085.png",
+        "D:\\Project\\HD-2DMap\\artifacts\\ground-dressing\\components\\component_088.png",
+        "D:\\Project\\HD-2DMap\\artifacts\\ground-dressing\\components\\component_079.png"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "status": "success",
+  "manifest_role": "Local deliverables; derived files are local processing/captures rather than backend outputs.",
+  "job_ids": [
+    "job_7a4d36f7c937404390a98b8cf6e0c66a",
+    "job_cdbef3bc76d845659de419c4bdf415ab",
+    "job_261574c790b84e9793fef6c6059e7972"
+  ],
+  "outputs": [
+    {
+      "type": "media",
+      "path": "D:\\Project\\HD-2DMap\\demoWithMeowa\\1\\assets\\meowa\\audio\\bgm.mp3",
+      "mime_type": "audio/mpeg",
+      "role": "unchanged Meowa current BGM"
+    },
+    {
+      "type": "media",
+      "path": "D:\\Project\\HD-2DMap\\demoWithMeowa\\1\\assets\\meowa\\audio\\wind_source.mp3",
+      "mime_type": "audio/mpeg",
+      "role": "unchanged Meowa wind source"
+    },
+    {
+      "type": "media",
+      "path": "D:\\Project\\HD-2DMap\\demoWithMeowa\\1\\assets\\meowa\\audio\\bgm_rainy.mp3",
+      "mime_type": "audio/mpeg",
+      "role": "unchanged archived first BGM"
+    },
+    {
+      "type": "derived_audio",
+      "path": "D:\\Project\\HD-2DMap\\demoWithMeowa\\1\\assets\\meowa\\audio\\wind.wav",
+      "mime_type": "audio/wav",
+      "source": "D:\\Project\\HD-2DMap\\demoWithMeowa\\1\\assets\\meowa\\audio\\wind_source.mp3",
+      "processing_record": "D:\\Project\\HD-2DMap\\demoWithMeowa\\1\\assets\\meowa\\audio\\wind-processing.json"
+    },
+    {
+      "type": "derived_audio",
+      "path": "D:\\Project\\HD-2DMap\\docs\\audio-preview\\bgm.wav",
+      "mime_type": "audio/wav",
+      "role": "BGM solo at the current -20dB game gain"
+    },
+    {
+      "type": "derived_audio",
+      "path": "D:\\Project\\HD-2DMap\\docs\\audio-preview\\soundscape.wav",
+      "mime_type": "audio/wav",
+      "role": "Actual native game mix capture"
+    },
+    {
+      "type": "derived_audio",
+      "path": "D:\\Project\\HD-2DMap\\docs\\audio-preview\\music-loop.wav",
+      "mime_type": "audio/wav",
+      "role": "Actual native game loop crossfade capture"
+    }
+  ]
+}

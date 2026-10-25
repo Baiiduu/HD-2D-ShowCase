@@ -1,0 +1,1113 @@
+{
+  "seed": 10102026,
+  "description": "Sparse grass and flower patches near the starting wilderness and across the northeast terraces. Original pebble positions are retained but their layer is disabled in the main scene.",
+  "instances": [
+    {
+      "asset": "flowers_03",
+      "position": [
+        2.0231,
+        0.02,
+        1.5705
+      ],
+      "density_rank": 0.56012
+    },
+    {
+      "asset": "grass_01",
+      "position": [
+        2.6916,
+        0.02,
+        2.8409
+      ],
+      "density_rank": 0.66776
+    },
+    {
+      "asset": "grass_01",
+      "position": [
+        3.0035,
+        0.02,
+        1.9834
+      ],
+      "density_rank": 0.92811
+    },
+    {
+      "asset": "flowers_06",
+      "position": [
+        2.3536,
+        0.02,
+        4.6295
+      ],
+      "density_rank": 0.93123
+    },
+    {
+      "asset": "flowers_02",
+      "position": [
+        2.8915,
+        0.02,
+        5.247
+      ],
+      "density_rank": 0.40437
+    },
+    {
+      "asset": "grass_01",
+      "position": [
+        3.6212,
+        0.02,
+        4.3037
+      ],
+      "density_rank": 0.29744
+    },
+    {
+      "asset": "grass_01",
+      "position": [
+        1.9651,
+        0.02,
+        5.5687
+      ],
+      "density_rank": 0.43848
+    },
+    {
+      "asset": "grass_02",
+      "position": [
+        2.7412,
+        0.02,
+        3.7865
+      ],
+      "density_rank": 0.88368
+    },
+    {
+      "asset": "flowers_01",
+      "position": [
+        2.8803,
+        0.02,
+        6.8053
+      ],
+      "density_rank": 0.47904
+    },
+    {
+      "asset": "grass_03",
+      "position": [
+        2.9045,
+        0.02,
+        7.6747
+      ],
+      "density_rank": 0.52584
+    },
+    {
+      "asset": "grass_05",
+      "position": [
+        1.4436,
+        0.02,
+        6.9937
+      ],
+      "density_rank": 0.10384
+    },
+    {
+      "asset": "flowers_02",
+      "position": [
+        6.8546,
+        0.02,
+        1.5301
+      ],
+      "density_rank": 0.61848
+    },
+    {
+      "asset": "grass_01",
+      "position": [
+        5.9145,
+        0.02,
+        1.5207
+      ],
+      "density_rank": 0.86209
+    },
+    {
+      "asset": "grass_01",
+      "position": [
+        7.964,
+        0.02,
+        1.3826
+      ],
+      "density_rank": 0.30995
+    },
+    {
+      "asset": "grass_01",
+      "position": [
+        7.0776,
+        0.02,
+        2.5968
+      ],
+      "density_rank": 0.37522
+    },
+    {
+      "asset": "flowers_01",
+      "position": [
+        8.2567,
+        0.02,
+        3.3899
+      ],
+      "density_rank": 0.53525
+    },
+    {
+      "asset": "flowers_02",
+      "position": [
+        7.6005,
+        0.02,
+        4.5566
+      ],
+      "density_rank": 0.45021
+    },
+    {
+      "asset": "grass_02",
+      "position": [
+        7.3308,
+        0.02,
+        3.5541
+      ],
+      "density_rank": 0.94817
+    },
+    {
+      "asset": "grass_01",
+      "position": [
+        8.4533,
+        0.02,
+        4.3084
+      ],
+      "density_rank": 0.73587
+    },
+    {
+      "asset": "grass_01",
+      "position": [
+        6.3022,
+        0.02,
+        3.2292
+      ],
+      "density_rank": 0.28536
+    },
+    {
+      "asset": "grass_01",
+      "position": [
+        6.815,
+        0.02,
+        4.2989
+      ],
+      "density_rank": 0.93357
+    },
+    {
+      "asset": "grass_02",
+      "position": [
+        9.1072,
+        0.02,
+        6.3309
+      ],
+      "density_rank": 0.17374
+    },
+    {
+      "asset": "grass_01",
+      "position": [
+        8.1835,
+        0.02,
+        5.2274
+      ],
+      "density_rank": 0.46111
+    },
+    {
+      "asset": "grass_01",
+      "position": [
+        7.9876,
+        0.02,
+        7.5227
+      ],
+      "density_rank": 0.09451
+    },
+    {
+      "asset": "flowers_01",
+      "position": [
+        9.5426,
+        0.02,
+        8.1561
+      ],
+      "density_rank": 0.94255
+    },
+    {
+      "asset": "grass_01",
+      "position": [
+        9.8035,
+        0.02,
+        9.2211
+      ],
+      "density_rank": 0.16215
+    },
+    {
+      "asset": "grass_02",
+      "position": [
+        9.0017,
+        0.02,
+        9.2107
+      ],
+      "density_rank": 0.32748
+    },
+    {
+      "asset": "flowers_01",
+      "position": [
+        10.9557,
+        0.02,
+        1.8557
+      ],
+      "density_rank": 0.01129
+    },
+    {
+      "asset": "flowers_04",
+      "position": [
+        11.3296,
+        0.02,
+        3.2898
+      ],
+      "density_rank": 0.8076
+    },
+    {
+      "asset": "grass_02",
+      "position": [
+        9.7891,
+        0.02,
+        3.4395
+      ],
+      "density_rank": 0.27559
+    },
+    {
+      "asset": "grass_01",
+      "position": [
+        10.0682,
+        0.02,
+        1.3595
+      ],
+      "density_rank": 0.10479
+    },
+    {
+      "asset": "grass_01",
+      "position": [
+        10.2971,
+        0.02,
+        2.5451
+      ],
+      "density_rank": 0.80003
+    },
+    {
+      "asset": "grass_01",
+      "position": [
+        11.8682,
+        0.02,
+        2.6741
+      ],
+      "density_rank": 0.52327
+    },
+    {
+      "asset": "flowers_02",
+      "position": [
+        11.2261,
+        0.02,
+        6.3511
+      ],
+      "density_rank": 0.76128
+    },
+    {
+      "asset": "flowers_03",
+      "position": [
+        12.0224,
+        0.02,
+        5.624
+      ],
+      "density_rank": 0.12512
+    },
+    {
+      "asset": "grass_01",
+      "position": [
+        11.3584,
+        0.02,
+        4.6797
+      ],
+      "density_rank": 0.38192
+    },
+    {
+      "asset": "grass_05",
+      "position": [
+        10.4337,
+        0.02,
+        6.5309
+      ],
+      "density_rank": 0.69892
+    },
+    {
+      "asset": "grass_01",
+      "position": [
+        12.8526,
+        0.02,
+        5.6952
+      ],
+      "density_rank": 0.09454
+    },
+    {
+      "asset": "grass_01",
+      "position": [
+        10.6803,
+        0.02,
+        5.4161
+      ],
+      "density_rank": 0.05178
+    },
+    {
+      "asset": "pebbles_02",
+      "position": [
+        1.1636,
+        0.02,
+        3.9538
+      ],
+      "density_rank": 0.67233
+    },
+    {
+      "asset": "pebbles_03",
+      "position": [
+        1.7209,
+        0.02,
+        3.207
+      ],
+      "density_rank": 0.73193
+    },
+    {
+      "asset": "pebbles_01",
+      "position": [
+        2.4498,
+        0.02,
+        8.9991
+      ],
+      "density_rank": 0.56186
+    },
+    {
+      "asset": "pebbles_02",
+      "position": [
+        1.894,
+        0.02,
+        8.7408
+      ],
+      "density_rank": 0.3461
+    },
+    {
+      "asset": "pebbles_03",
+      "position": [
+        1.9898,
+        0.02,
+        7.8412
+      ],
+      "density_rank": 0.19138
+    },
+    {
+      "asset": "pebbles_03",
+      "position": [
+        5.9891,
+        0.02,
+        2.6771
+      ],
+      "density_rank": 0.12779
+    },
+    {
+      "asset": "pebbles_06",
+      "position": [
+        5.9457,
+        0.02,
+        2.1036
+      ],
+      "density_rank": 0.89423
+    },
+    {
+      "asset": "pebbles_01",
+      "position": [
+        6.2529,
+        0.02,
+        3.7827
+      ],
+      "density_rank": 0.25336
+    },
+    {
+      "asset": "pebbles_03",
+      "position": [
+        6.4558,
+        0.02,
+        5.3659
+      ],
+      "density_rank": 0.09368
+    },
+    {
+      "asset": "pebbles_04",
+      "position": [
+        6.9019,
+        0.02,
+        5.0212
+      ],
+      "density_rank": 0.59545
+    },
+    {
+      "asset": "pebbles_03",
+      "position": [
+        9.0893,
+        0.02,
+        3.8638
+      ],
+      "density_rank": 0.0092
+    },
+    {
+      "asset": "pebbles_03",
+      "position": [
+        8.9349,
+        0.02,
+        4.8246
+      ],
+      "density_rank": 0.59859
+    },
+    {
+      "asset": "pebbles_04",
+      "position": [
+        9.5436,
+        0.02,
+        5.2532
+      ],
+      "density_rank": 0.16925
+    },
+    {
+      "asset": "pebbles_02",
+      "position": [
+        11.009,
+        0.02,
+        8.3317
+      ],
+      "density_rank": 0.13942
+    },
+    {
+      "asset": "pebbles_01",
+      "position": [
+        10.3509,
+        0.02,
+        7.6725
+      ],
+      "density_rank": 0.18338
+    },
+    {
+      "asset": "pebbles_04",
+      "position": [
+        12.7371,
+        0.02,
+        7.279
+      ],
+      "density_rank": 0.56351
+    },
+    {
+      "asset": "pebbles_01",
+      "position": [
+        -1.4417,
+        0.02,
+        2.9603
+      ],
+      "density_rank": 0.9172
+    },
+    {
+      "asset": "pebbles_04",
+      "position": [
+        -1.2779,
+        0.02,
+        2.465
+      ],
+      "density_rank": 0.80665
+    },
+    {
+      "asset": "pebbles_02",
+      "position": [
+        -1.5031,
+        0.02,
+        -1.2126
+      ],
+      "density_rank": 0.81287
+    },
+    {
+      "asset": "pebbles_02",
+      "position": [
+        -1.5035,
+        0.02,
+        -1.5345
+      ],
+      "density_rank": 0.97916
+    },
+    {
+      "asset": "flowers_01",
+      "position": [
+        13.9001,
+        0.82,
+        -7.1971
+      ],
+      "density_rank": 0.82989
+    },
+    {
+      "asset": "grass_02",
+      "position": [
+        14.109,
+        0.82,
+        -8.2597
+      ],
+      "density_rank": 0.16621
+    },
+    {
+      "asset": "grass_02",
+      "position": [
+        13.1906,
+        0.82,
+        -9.0565
+      ],
+      "density_rank": 0.18448
+    },
+    {
+      "asset": "grass_01",
+      "position": [
+        14.689,
+        0.82,
+        -7.6278
+      ],
+      "density_rank": 0.3295
+    },
+    {
+      "asset": "flowers_03",
+      "position": [
+        16.5647,
+        0.82,
+        -8.7168
+      ],
+      "density_rank": 0.97501
+    },
+    {
+      "asset": "grass_01",
+      "position": [
+        17.8878,
+        0.82,
+        -7.9668
+      ],
+      "density_rank": 0.40656
+    },
+    {
+      "asset": "grass_06",
+      "position": [
+        17.0322,
+        0.82,
+        -7.3404
+      ],
+      "density_rank": 0.89649
+    },
+    {
+      "asset": "grass_02",
+      "position": [
+        18.583,
+        0.82,
+        -8.7981
+      ],
+      "density_rank": 0.33681
+    },
+    {
+      "asset": "flowers_01",
+      "position": [
+        21.0168,
+        0.82,
+        -6.8825
+      ],
+      "density_rank": 0.76328
+    },
+    {
+      "asset": "grass_05",
+      "position": [
+        19.8685,
+        0.82,
+        -8.1393
+      ],
+      "density_rank": 0.56642
+    },
+    {
+      "asset": "grass_05",
+      "position": [
+        19.982,
+        0.82,
+        -7.1319
+      ],
+      "density_rank": 0.6653
+    },
+    {
+      "asset": "grass_01",
+      "position": [
+        20.7117,
+        0.82,
+        -7.8358
+      ],
+      "density_rank": 0.37858
+    },
+    {
+      "asset": "flowers_03",
+      "position": [
+        14.1202,
+        0.82,
+        -3.0593
+      ],
+      "density_rank": 0.23271
+    },
+    {
+      "asset": "grass_01",
+      "position": [
+        13.5361,
+        0.82,
+        -4.4597
+      ],
+      "density_rank": 0.62273
+    },
+    {
+      "asset": "grass_05",
+      "position": [
+        13.1992,
+        0.82,
+        -3.1887
+      ],
+      "density_rank": 0.14173
+    },
+    {
+      "asset": "grass_01",
+      "position": [
+        14.2523,
+        0.82,
+        -3.9376
+      ],
+      "density_rank": 0.59214
+    },
+    {
+      "asset": "flowers_01",
+      "position": [
+        18.7765,
+        0.82,
+        -3.0241
+      ],
+      "density_rank": 0.52465
+    },
+    {
+      "asset": "grass_05",
+      "position": [
+        17.5942,
+        0.82,
+        -3.5398
+      ],
+      "density_rank": 0.80116
+    },
+    {
+      "asset": "flowers_02",
+      "position": [
+        20.2175,
+        0.82,
+        -3.1966
+      ],
+      "density_rank": 0.3039
+    },
+    {
+      "asset": "grass_05",
+      "position": [
+        21.1069,
+        0.82,
+        -3.3595
+      ],
+      "density_rank": 0.42888
+    },
+    {
+      "asset": "flowers_01",
+      "position": [
+        13.8065,
+        0.02,
+        -1.3729
+      ],
+      "density_rank": 0.26603
+    },
+    {
+      "asset": "grass_01",
+      "position": [
+        12.9682,
+        0.02,
+        -1.9345
+      ],
+      "density_rank": 0.57559
+    },
+    {
+      "asset": "flowers_01",
+      "position": [
+        18.0918,
+        0.02,
+        -1.4582
+      ],
+      "density_rank": 0.48649
+    },
+    {
+      "asset": "grass_05",
+      "position": [
+        17.304,
+        0.02,
+        -1.7998
+      ],
+      "density_rank": 0.44807
+    },
+    {
+      "asset": "flowers_01",
+      "position": [
+        24.2222,
+        0.82,
+        -7.6179
+      ],
+      "density_rank": 0.51187
+    },
+    {
+      "asset": "grass_05",
+      "position": [
+        24.7226,
+        0.82,
+        -6.9003
+      ],
+      "density_rank": 0.09251
+    },
+    {
+      "asset": "grass_01",
+      "position": [
+        25.2385,
+        0.82,
+        -8.5232
+      ],
+      "density_rank": 0.24409
+    },
+    {
+      "asset": "grass_01",
+      "position": [
+        25.702,
+        0.82,
+        -7.2975
+      ],
+      "density_rank": 0.96475
+    },
+    {
+      "asset": "flowers_02",
+      "position": [
+        24.7746,
+        0.82,
+        -3.0003
+      ],
+      "density_rank": 0.5238
+    },
+    {
+      "asset": "grass_02",
+      "position": [
+        24.1758,
+        0.82,
+        -3.5337
+      ],
+      "density_rank": 0.59947
+    },
+    {
+      "asset": "grass_01",
+      "position": [
+        25.6912,
+        0.82,
+        -2.9621
+      ],
+      "density_rank": 0.86016
+    },
+    {
+      "asset": "flowers_01",
+      "position": [
+        27.3556,
+        1.62,
+        -9.2334
+      ],
+      "density_rank": 0.82217
+    },
+    {
+      "asset": "grass_01",
+      "position": [
+        26.917,
+        1.62,
+        -8.0394
+      ],
+      "density_rank": 0.85479
+    },
+    {
+      "asset": "flowers_01",
+      "position": [
+        31.0087,
+        1.62,
+        -9.0265
+      ],
+      "density_rank": 0.54934
+    },
+    {
+      "asset": "flowers_03",
+      "position": [
+        31.5412,
+        1.62,
+        -8.3235
+      ],
+      "density_rank": 0.62531
+    },
+    {
+      "asset": "grass_06",
+      "position": [
+        30.3215,
+        1.62,
+        -7.6776
+      ],
+      "density_rank": 0.95987
+    },
+    {
+      "asset": "grass_05",
+      "position": [
+        30.0846,
+        1.62,
+        -9.2198
+      ],
+      "density_rank": 0.1923
+    },
+    {
+      "asset": "grass_01",
+      "position": [
+        32.1817,
+        1.62,
+        -8.8865
+      ],
+      "density_rank": 0.99371
+    },
+    {
+      "asset": "grass_01",
+      "position": [
+        31.1138,
+        1.62,
+        -7.3465
+      ],
+      "density_rank": 0.76735
+    },
+    {
+      "asset": "flowers_01",
+      "position": [
+        32.9213,
+        1.62,
+        -6.313
+      ],
+      "density_rank": 0.18309
+    },
+    {
+      "asset": "grass_02",
+      "position": [
+        32.0543,
+        1.62,
+        -7.0805
+      ],
+      "density_rank": 0.59437
+    },
+    {
+      "asset": "grass_01",
+      "position": [
+        33.3645,
+        1.62,
+        -7.3143
+      ],
+      "density_rank": 0.17149
+    },
+    {
+      "asset": "grass_01",
+      "position": [
+        31.8825,
+        1.62,
+        -6.1402
+      ],
+      "density_rank": 0.58392
+    },
+    {
+      "asset": "flowers_02",
+      "position": [
+        30.571,
+        1.62,
+        -6.4903
+      ],
+      "density_rank": 0.88335
+    },
+    {
+      "asset": "grass_01",
+      "position": [
+        30.7172,
+        0.82,
+        -5.0368
+      ],
+      "density_rank": 0.06493
+    },
+    {
+      "asset": "flowers_02",
+      "position": [
+        26.967,
+        1.62,
+        -6.4251
+      ],
+      "density_rank": 0.66359
+    },
+    {
+      "asset": "grass_02",
+      "position": [
+        27.3522,
+        1.62,
+        -7.1817
+      ],
+      "density_rank": 0.60012
+    },
+    {
+      "asset": "flowers_01",
+      "position": [
+        35.4448,
+        0.82,
+        -8.4429
+      ],
+      "density_rank": 0.50215
+    },
+    {
+      "asset": "grass_01",
+      "position": [
+        34.9113,
+        0.82,
+        -7.6778
+      ],
+      "density_rank": 0.90327
+    },
+    {
+      "asset": "flowers_02",
+      "position": [
+        27.9833,
+        0.82,
+        -3.3295
+      ],
+      "density_rank": 0.84931
+    },
+    {
+      "asset": "grass_02",
+      "position": [
+        27.0529,
+        0.82,
+        -2.878
+      ],
+      "density_rank": 0.88778
+    },
+    {
+      "asset": "grass_01",
+      "position": [
+        28.8759,
+        0.82,
+        -3.1314
+      ],
+      "density_rank": 0.36409
+    },
+    {
+      "asset": "flowers_03",
+      "position": [
+        32.3572,
+        0.82,
+        -3.5994
+      ],
+      "density_rank": 0.34317
+    },
+    {
+      "asset": "grass_01",
+      "position": [
+        32.5115,
+        0.02,
+        -1.9488
+      ],
+      "density_rank": 0.48196
+    },
+    {
+      "asset": "grass_01",
+      "position": [
+        33.4504,
+        0.82,
+        -3.456
+      ],
+      "density_rank": 0.56564
+    },
+    {
+      "asset": "grass_01",
+      "position": [
+        31.8031,
+        0.82,
+        -2.8837
+      ],
+      "density_rank": 0.63703
+    },
+    {
+      "asset": "flowers_03",
+      "position": [
+        35.305,
+        0.82,
+        -3.7258
+      ],
+      "density_rank": 0.26073
+    },
+    {
+      "asset": "grass_01",
+      "position": [
+        34.7534,
+        0.82,
+        -3.0444
+      ],
+      "density_rank": 0.94026
+    },
+    {
+      "asset": "flowers_03",
+      "position": [
+        25.5471,
+        0.02,
+        -1.4142
+      ],
+      "density_rank": 0.16661
+    },
+    {
+      "asset": "grass_01",
+      "position": [
+        24.4351,
+        0.02,
+        -1.938
+      ],
+      "density_rank": 0.786
+    },
+    {
+      "asset": "flowers_02",
+      "position": [
+        29.2049,
+        0.02,
+        -1.4987
+      ],
+      "density_rank": 0.91079
+    },
+    {
+      "asset": "grass_01",
+      "position": [
+        28.1573,
+        0.02,
+        -1.5145
+      ],
+      "density_rank": 0.84735
+    },
+    {
+      "asset": "flowers_01",
+      "position": [
+        34.0146,
+        0.02,
+        -1.2722
+      ],
+      "density_rank": 0.82867
+    },
+    {
+      "asset": "grass_01",
+      "position": [
+        33.2109,
+        0.02,
+        -1.4232
+      ],
+      "density_rank": 0.01713
+    }
+  ]
+}

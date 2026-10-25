@@ -1,0 +1,5025 @@
+{
+ "camera": {
+  "distance": 11.0,
+  "fov_vertical_deg": 30.0,
+  "look_direction": "north (-Z), camera sits south of the target",
+  "pitch_deg": 10.0,
+  "projection": "perspective"
+ },
+ "fog_volumes": [
+  {
+   "center": [
+    22.4,
+    -0.05,
+    -1.7
+   ],
+   "name": "World/WaterfallMist",
+   "size": [
+    2.0,
+    1.1,
+    1.8
+   ]
+  },
+  {
+   "center": [
+    -9.7,
+    1.3,
+    -2.7
+   ],
+   "name": "World/City/StreetLight0/Mist",
+   "size": [
+    2.6,
+    2.8,
+    2.6
+   ]
+  },
+  {
+   "center": [
+    -2.4,
+    1.3,
+    -2.7
+   ],
+   "name": "World/City/StreetLight1/Mist",
+   "size": [
+    2.6,
+    2.8,
+    2.6
+   ]
+  }
+ ],
+ "lights": [
+  {
+   "color": [
+    1.0,
+    0.72,
+    0.42
+   ],
+   "energy": 2.20000004768372,
+   "name": "World/Lantern0/Light",
+   "position": [
+    20.9,
+    1.24,
+    -1.0
+   ],
+   "range": 5.5,
+   "shadows": true,
+   "type": "OmniLight3D"
+  },
+  {
+   "color": [
+    1.0,
+    0.72,
+    0.42
+   ],
+   "energy": 2.20000004768372,
+   "name": "World/Lantern1/Light",
+   "position": [
+    23.9,
+    1.24,
+    1.0
+   ],
+   "range": 5.5,
+   "shadows": true,
+   "type": "OmniLight3D"
+  },
+  {
+   "color": [
+    1.0,
+    0.72,
+    0.42
+   ],
+   "energy": 2.20000004768372,
+   "name": "World/Lantern2/Light",
+   "position": [
+    20.9,
+    2.04,
+    -6.0
+   ],
+   "range": 5.5,
+   "shadows": true,
+   "type": "OmniLight3D"
+  },
+  {
+   "color": [
+    1.0,
+    0.72,
+    0.42
+   ],
+   "energy": 2.20000004768372,
+   "name": "World/Lantern3/Light",
+   "position": [
+    23.9,
+    2.04,
+    -3.6
+   ],
+   "range": 5.5,
+   "shadows": true,
+   "type": "OmniLight3D"
+  },
+  {
+   "color": [
+    1.0,
+    0.796,
+    0.541
+   ],
+   "energy": 2.70000004768372,
+   "name": "World/City/StreetLight0",
+   "position": [
+    -9.7,
+    2.5,
+    -2.7
+   ],
+   "range": 6.5,
+   "shadows": true,
+   "type": "OmniLight3D"
+  },
+  {
+   "angle_deg": 36.0,
+   "color": [
+    1.0,
+    0.8,
+    0.55
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "energy": 2.5,
+   "name": "World/City/StreetLight0/Cone",
+   "position": [
+    -9.7,
+    2.5,
+    -2.7
+   ],
+   "range": 4.0,
+   "shadows": false,
+   "type": "SpotLight3D"
+  },
+  {
+   "color": [
+    1.0,
+    0.796,
+    0.541
+   ],
+   "energy": 2.70000004768372,
+   "name": "World/City/StreetLight1",
+   "position": [
+    -2.4,
+    2.5,
+    -2.7
+   ],
+   "range": 6.5,
+   "shadows": true,
+   "type": "OmniLight3D"
+  },
+  {
+   "angle_deg": 36.0,
+   "color": [
+    1.0,
+    0.8,
+    0.55
+   ],
+   "direction": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "energy": 2.5,
+   "name": "World/City/StreetLight1/Cone",
+   "position": [
+    -2.4,
+    2.5,
+    -2.7
+   ],
+   "range": 4.0,
+   "shadows": false,
+   "type": "SpotLight3D"
+  },
+  {
+   "color": [
+    0.286,
+    0.863,
+    0.906
+   ],
+   "energy": 3.0,
+   "name": "World/Cyber/CyanWash",
+   "position": [
+    4.0,
+    2.0,
+    -4.0
+   ],
+   "range": 7.0,
+   "shadows": true,
+   "type": "OmniLight3D"
+  },
+  {
+   "color": [
+    0.89,
+    0.29,
+    0.686
+   ],
+   "energy": 3.0,
+   "name": "World/Cyber/MagentaWash",
+   "position": [
+    9.0,
+    2.0,
+    -3.0
+   ],
+   "range": 7.0,
+   "shadows": true,
+   "type": "OmniLight3D"
+  },
+  {
+   "color": [
+    1.0,
+    0.78,
+    0.49
+   ],
+   "energy": 1.60000002384186,
+   "name": "World/Cultivation/LanternLight0",
+   "position": [
+    -9.0,
+    2.25,
+    5.25
+   ],
+   "range": 5.0,
+   "shadows": true,
+   "type": "OmniLight3D"
+  },
+  {
+   "color": [
+    1.0,
+    0.78,
+    0.49
+   ],
+   "energy": 1.60000002384186,
+   "name": "World/Cultivation/LanternLight1",
+   "position": [
+    -4.6,
+    2.25,
+    5.25
+   ],
+   "range": 5.0,
+   "shadows": true,
+   "type": "OmniLight3D"
+  },
+  {
+   "color": [
+    0.392,
+    0.918,
+    0.722
+   ],
+   "energy": 3.0,
+   "name": "World/Cultivation/SpiritLight",
+   "position": [
+    -3.0,
+    1.4,
+    6.5
+   ],
+   "range": 6.0,
+   "shadows": true,
+   "type": "OmniLight3D"
+  },
+  {
+   "color": [
+    0.545,
+    0.741,
+    0.635
+   ],
+   "energy": 1.79999995231628,
+   "name": "World/Wilderness/ForestGlade",
+   "position": [
+    6.0,
+    2.0,
+    6.0
+   ],
+   "range": 7.0,
+   "shadows": true,
+   "type": "OmniLight3D"
+  }
+ ],
+ "meshes": [
+  {
+   "material": {
+    "albedo": [
+     0.22,
+     0.15,
+     0.1
+    ],
+    "emission": null,
+    "emission_energy": 0.0,
+    "metallic": 0.0,
+    "roughness": 0.850000023841858,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "BoxMesh",
+   "name": "World/Lantern0/Post",
+   "size": [
+    0.09,
+    1.1,
+    0.09
+   ],
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     20.9,
+     0.57,
+     -1.0
+    ]
+   }
+  },
+  {
+   "material": {
+    "albedo": [
+     1.0,
+     0.78,
+     0.5
+    ],
+    "emission": [
+     1.0,
+     0.7,
+     0.38
+    ],
+    "emission_energy": 3.5,
+    "metallic": 0.0,
+    "roughness": 1.0,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "BoxMesh",
+   "name": "World/Lantern0/Lamp",
+   "size": [
+    0.2,
+    0.24,
+    0.2
+   ],
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     20.9,
+     1.24,
+     -1.0
+    ]
+   }
+  },
+  {
+   "material": {
+    "albedo": [
+     0.22,
+     0.15,
+     0.1
+    ],
+    "emission": null,
+    "emission_energy": 0.0,
+    "metallic": 0.0,
+    "roughness": 0.850000023841858,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "BoxMesh",
+   "name": "World/Lantern0/Cap",
+   "size": [
+    0.28,
+    0.05,
+    0.28
+   ],
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     20.9,
+     1.38,
+     -1.0
+    ]
+   }
+  },
+  {
+   "material": {
+    "albedo": [
+     0.22,
+     0.15,
+     0.1
+    ],
+    "emission": null,
+    "emission_energy": 0.0,
+    "metallic": 0.0,
+    "roughness": 0.850000023841858,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "BoxMesh",
+   "name": "World/Lantern1/Post",
+   "size": [
+    0.09,
+    1.1,
+    0.09
+   ],
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     23.9,
+     0.57,
+     1.0
+    ]
+   }
+  },
+  {
+   "material": {
+    "albedo": [
+     1.0,
+     0.78,
+     0.5
+    ],
+    "emission": [
+     1.0,
+     0.7,
+     0.38
+    ],
+    "emission_energy": 3.5,
+    "metallic": 0.0,
+    "roughness": 1.0,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "BoxMesh",
+   "name": "World/Lantern1/Lamp",
+   "size": [
+    0.2,
+    0.24,
+    0.2
+   ],
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     23.9,
+     1.24,
+     1.0
+    ]
+   }
+  },
+  {
+   "material": {
+    "albedo": [
+     0.22,
+     0.15,
+     0.1
+    ],
+    "emission": null,
+    "emission_energy": 0.0,
+    "metallic": 0.0,
+    "roughness": 0.850000023841858,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "BoxMesh",
+   "name": "World/Lantern1/Cap",
+   "size": [
+    0.28,
+    0.05,
+    0.28
+   ],
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     23.9,
+     1.38,
+     1.0
+    ]
+   }
+  },
+  {
+   "material": {
+    "albedo": [
+     0.22,
+     0.15,
+     0.1
+    ],
+    "emission": null,
+    "emission_energy": 0.0,
+    "metallic": 0.0,
+    "roughness": 0.850000023841858,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "BoxMesh",
+   "name": "World/Lantern2/Post",
+   "size": [
+    0.09,
+    1.1,
+    0.09
+   ],
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     20.9,
+     1.37,
+     -6.0
+    ]
+   }
+  },
+  {
+   "material": {
+    "albedo": [
+     1.0,
+     0.78,
+     0.5
+    ],
+    "emission": [
+     1.0,
+     0.7,
+     0.38
+    ],
+    "emission_energy": 3.5,
+    "metallic": 0.0,
+    "roughness": 1.0,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "BoxMesh",
+   "name": "World/Lantern2/Lamp",
+   "size": [
+    0.2,
+    0.24,
+    0.2
+   ],
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     20.9,
+     2.04,
+     -6.0
+    ]
+   }
+  },
+  {
+   "material": {
+    "albedo": [
+     0.22,
+     0.15,
+     0.1
+    ],
+    "emission": null,
+    "emission_energy": 0.0,
+    "metallic": 0.0,
+    "roughness": 0.850000023841858,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "BoxMesh",
+   "name": "World/Lantern2/Cap",
+   "size": [
+    0.28,
+    0.05,
+    0.28
+   ],
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     20.9,
+     2.18,
+     -6.0
+    ]
+   }
+  },
+  {
+   "material": {
+    "albedo": [
+     0.22,
+     0.15,
+     0.1
+    ],
+    "emission": null,
+    "emission_energy": 0.0,
+    "metallic": 0.0,
+    "roughness": 0.850000023841858,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "BoxMesh",
+   "name": "World/Lantern3/Post",
+   "size": [
+    0.09,
+    1.1,
+    0.09
+   ],
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     23.9,
+     1.37,
+     -3.6
+    ]
+   }
+  },
+  {
+   "material": {
+    "albedo": [
+     1.0,
+     0.78,
+     0.5
+    ],
+    "emission": [
+     1.0,
+     0.7,
+     0.38
+    ],
+    "emission_energy": 3.5,
+    "metallic": 0.0,
+    "roughness": 1.0,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "BoxMesh",
+   "name": "World/Lantern3/Lamp",
+   "size": [
+    0.2,
+    0.24,
+    0.2
+   ],
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     23.9,
+     2.04,
+     -3.6
+    ]
+   }
+  },
+  {
+   "material": {
+    "albedo": [
+     0.22,
+     0.15,
+     0.1
+    ],
+    "emission": null,
+    "emission_energy": 0.0,
+    "metallic": 0.0,
+    "roughness": 0.850000023841858,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "BoxMesh",
+   "name": "World/Lantern3/Cap",
+   "size": [
+    0.28,
+    0.05,
+    0.28
+   ],
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     23.9,
+     2.18,
+     -3.6
+    ]
+   }
+  },
+  {
+   "material": {
+    "albedo": [
+     0.71,
+     0.639,
+     0.541
+    ],
+    "emission": null,
+    "emission_energy": 0.0,
+    "metallic": 0.0,
+    "roughness": 0.800000011920929,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "BoxMesh",
+   "name": "World/City/Building0",
+   "size": [
+    3.0,
+    3.3,
+    2.5
+   ],
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     -8.5,
+     1.7,
+     -7.0
+    ]
+   }
+  },
+  {
+   "material": {
+    "albedo": [
+     0.533,
+     0.396,
+     0.337
+    ],
+    "emission": null,
+    "emission_energy": 0.0,
+    "metallic": 0.0,
+    "roughness": 0.800000011920929,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "BoxMesh",
+   "name": "World/City/Roof0",
+   "size": [
+    3.35,
+    0.35,
+    2.85
+   ],
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     -8.5,
+     3.5,
+     -7.0
+    ]
+   }
+  },
+  {
+   "material": {
+    "albedo": [
+     1.0,
+     0.824,
+     0.58
+    ],
+    "emission": [
+     1.0,
+     0.824,
+     0.58
+    ],
+    "emission_energy": 2.79999995231628,
+    "metallic": 0.0,
+    "roughness": 0.800000011920929,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "BoxMesh",
+   "name": "World/City/Window0_0_0",
+   "size": [
+    0.64,
+    0.85,
+    0.035
+   ],
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     -9.25,
+     1.15,
+     -5.73
+    ]
+   }
+  },
+  {
+   "material": {
+    "albedo": [
+     1.0,
+     0.824,
+     0.58
+    ],
+    "emission": [
+     1.0,
+     0.824,
+     0.58
+    ],
+    "emission_energy": 2.79999995231628,
+    "metallic": 0.0,
+    "roughness": 0.800000011920929,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "BoxMesh",
+   "name": "World/City/Window0_0_1",
+   "size": [
+    0.64,
+    0.85,
+    0.035
+   ],
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     -7.75,
+     1.15,
+     -5.73
+    ]
+   }
+  },
+  {
+   "material": {
+    "albedo": [
+     1.0,
+     0.824,
+     0.58
+    ],
+    "emission": [
+     1.0,
+     0.824,
+     0.58
+    ],
+    "emission_energy": 2.79999995231628,
+    "metallic": 0.0,
+    "roughness": 0.800000011920929,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "BoxMesh",
+   "name": "World/City/Window0_1_0",
+   "size": [
+    0.64,
+    0.85,
+    0.035
+   ],
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     -9.25,
+     2.6,
+     -5.73
+    ]
+   }
+  },
+  {
+   "material": {
+    "albedo": [
+     1.0,
+     0.824,
+     0.58
+    ],
+    "emission": [
+     1.0,
+     0.824,
+     0.58
+    ],
+    "emission_energy": 2.79999995231628,
+    "metallic": 0.0,
+    "roughness": 0.800000011920929,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "BoxMesh",
+   "name": "World/City/Window0_1_1",
+   "size": [
+    0.64,
+    0.85,
+    0.035
+   ],
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     -7.75,
+     2.6,
+     -5.73
+    ]
+   }
+  },
+  {
+   "material": {
+    "albedo": [
+     0.439,
+     0.29,
+     0.235
+    ],
+    "emission": null,
+    "emission_energy": 0.0,
+    "metallic": 0.0,
+    "roughness": 0.800000011920929,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "BoxMesh",
+   "name": "World/City/Door0",
+   "size": [
+    0.7,
+    1.2,
+    0.04
+   ],
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     -8.5,
+     0.65,
+     -5.71
+    ]
+   }
+  },
+  {
+   "material": {
+    "albedo": [
+     0.71,
+     0.639,
+     0.541
+    ],
+    "emission": null,
+    "emission_energy": 0.0,
+    "metallic": 0.0,
+    "roughness": 0.800000011920929,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "BoxMesh",
+   "name": "World/City/Building1",
+   "size": [
+    3.0,
+    4.4,
+    2.7
+   ],
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     -4.0,
+     2.25,
+     -7.4
+    ]
+   }
+  },
+  {
+   "material": {
+    "albedo": [
+     0.533,
+     0.396,
+     0.337
+    ],
+    "emission": null,
+    "emission_energy": 0.0,
+    "metallic": 0.0,
+    "roughness": 0.800000011920929,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "BoxMesh",
+   "name": "World/City/Roof1",
+   "size": [
+    3.35,
+    0.35,
+    3.05
+   ],
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     -4.0,
+     4.6,
+     -7.4
+    ]
+   }
+  },
+  {
+   "material": {
+    "albedo": [
+     1.0,
+     0.824,
+     0.58
+    ],
+    "emission": [
+     1.0,
+     0.824,
+     0.58
+    ],
+    "emission_energy": 2.79999995231628,
+    "metallic": 0.0,
+    "roughness": 0.800000011920929,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "BoxMesh",
+   "name": "World/City/Window1_0_0",
+   "size": [
+    0.64,
+    0.85,
+    0.035
+   ],
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     -4.75,
+     1.15,
+     -6.03
+    ]
+   }
+  },
+  {
+   "material": {
+    "albedo": [
+     1.0,
+     0.824,
+     0.58
+    ],
+    "emission": [
+     1.0,
+     0.824,
+     0.58
+    ],
+    "emission_energy": 2.79999995231628,
+    "metallic": 0.0,
+    "roughness": 0.800000011920929,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "BoxMesh",
+   "name": "World/City/Window1_0_1",
+   "size": [
+    0.64,
+    0.85,
+    0.035
+   ],
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     -3.25,
+     1.15,
+     -6.03
+    ]
+   }
+  },
+  {
+   "material": {
+    "albedo": [
+     1.0,
+     0.824,
+     0.58
+    ],
+    "emission": [
+     1.0,
+     0.824,
+     0.58
+    ],
+    "emission_energy": 2.79999995231628,
+    "metallic": 0.0,
+    "roughness": 0.800000011920929,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "BoxMesh",
+   "name": "World/City/Window1_1_0",
+   "size": [
+    0.64,
+    0.85,
+    0.035
+   ],
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     -4.75,
+     2.6,
+     -6.03
+    ]
+   }
+  },
+  {
+   "material": {
+    "albedo": [
+     1.0,
+     0.824,
+     0.58
+    ],
+    "emission": [
+     1.0,
+     0.824,
+     0.58
+    ],
+    "emission_energy": 2.79999995231628,
+    "metallic": 0.0,
+    "roughness": 0.800000011920929,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "BoxMesh",
+   "name": "World/City/Window1_1_1",
+   "size": [
+    0.64,
+    0.85,
+    0.035
+   ],
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     -3.25,
+     2.6,
+     -6.03
+    ]
+   }
+  },
+  {
+   "material": {
+    "albedo": [
+     0.439,
+     0.29,
+     0.235
+    ],
+    "emission": null,
+    "emission_energy": 0.0,
+    "metallic": 0.0,
+    "roughness": 0.800000011920929,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "BoxMesh",
+   "name": "World/City/Door1",
+   "size": [
+    0.7,
+    1.2,
+    0.04
+   ],
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     -4.0,
+     0.65,
+     -6.01
+    ]
+   }
+  },
+  {
+   "bottom_radius": 0.0549999997019768,
+   "height": 2.5,
+   "material": {
+    "albedo": [
+     0.251,
+     0.318,
+     0.416
+    ],
+    "emission": null,
+    "emission_energy": 0.0,
+    "metallic": 0.0,
+    "roughness": 0.800000011920929,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "CylinderMesh",
+   "name": "World/City/Lamppost0",
+   "top_radius": 0.0549999997019768,
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     -9.7,
+     1.25,
+     -2.7
+    ]
+   }
+  },
+  {
+   "material": {
+    "albedo": [
+     1.0,
+     0.824,
+     0.58
+    ],
+    "emission": [
+     1.0,
+     0.824,
+     0.58
+    ],
+    "emission_energy": 2.79999995231628,
+    "metallic": 0.0,
+    "roughness": 0.800000011920929,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "BoxMesh",
+   "name": "World/City/Lantern0",
+   "size": [
+    0.27,
+    0.35,
+    0.27
+   ],
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     -9.7,
+     2.55,
+     -2.7
+    ]
+   }
+  },
+  {
+   "bottom_radius": 0.0549999997019768,
+   "height": 2.5,
+   "material": {
+    "albedo": [
+     0.251,
+     0.318,
+     0.416
+    ],
+    "emission": null,
+    "emission_energy": 0.0,
+    "metallic": 0.0,
+    "roughness": 0.800000011920929,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "CylinderMesh",
+   "name": "World/City/Lamppost1",
+   "top_radius": 0.0549999997019768,
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     -2.4,
+     1.25,
+     -2.7
+    ]
+   }
+  },
+  {
+   "material": {
+    "albedo": [
+     1.0,
+     0.824,
+     0.58
+    ],
+    "emission": [
+     1.0,
+     0.824,
+     0.58
+    ],
+    "emission_energy": 2.79999995231628,
+    "metallic": 0.0,
+    "roughness": 0.800000011920929,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "BoxMesh",
+   "name": "World/City/Lantern1",
+   "size": [
+    0.27,
+    0.35,
+    0.27
+   ],
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     -2.4,
+     2.55,
+     -2.7
+    ]
+   }
+  },
+  {
+   "material": {
+    "albedo": [
+     0.212,
+     0.224,
+     0.322
+    ],
+    "emission": null,
+    "emission_energy": 0.0,
+    "metallic": 0.0,
+    "roughness": 0.449999988079071,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "BoxMesh",
+   "name": "World/Cyber/Tower0",
+   "size": [
+    2.2,
+    4.5,
+    2.2
+   ],
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     3.2,
+     2.3,
+     -7.3
+    ]
+   }
+  },
+  {
+   "material": {
+    "albedo": [
+     0.259,
+     0.922,
+     0.929
+    ],
+    "emission": [
+     0.259,
+     0.922,
+     0.929
+    ],
+    "emission_energy": 2.79999995231628,
+    "metallic": 0.0,
+    "roughness": 0.800000011920929,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "BoxMesh",
+   "name": "World/Cyber/Strip0_0",
+   "size": [
+    1.9,
+    0.08,
+    0.04
+   ],
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     3.2,
+     3.8,
+     -6.17
+    ]
+   }
+  },
+  {
+   "material": {
+    "albedo": [
+     0.259,
+     0.922,
+     0.929
+    ],
+    "emission": [
+     0.259,
+     0.922,
+     0.929
+    ],
+    "emission_energy": 2.79999995231628,
+    "metallic": 0.0,
+    "roughness": 0.800000011920929,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "BoxMesh",
+   "name": "World/Cyber/Strip0_1",
+   "size": [
+    1.9,
+    0.08,
+    0.04
+   ],
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     3.2,
+     2.85,
+     -6.17
+    ]
+   }
+  },
+  {
+   "material": {
+    "albedo": [
+     0.259,
+     0.922,
+     0.929
+    ],
+    "emission": [
+     0.259,
+     0.922,
+     0.929
+    ],
+    "emission_energy": 2.79999995231628,
+    "metallic": 0.0,
+    "roughness": 0.800000011920929,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "BoxMesh",
+   "name": "World/Cyber/Strip0_2",
+   "size": [
+    1.9,
+    0.08,
+    0.04
+   ],
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     3.2,
+     1.9,
+     -6.17
+    ]
+   }
+  },
+  {
+   "material": {
+    "albedo": [
+     0.91,
+     0.404,
+     0.729
+    ],
+    "emission": [
+     0.91,
+     0.404,
+     0.729
+    ],
+    "emission_energy": 2.79999995231628,
+    "metallic": 0.0,
+    "roughness": 0.800000011920929,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "BoxMesh",
+   "name": "World/Cyber/Edge0",
+   "size": [
+    0.08,
+    4.5,
+    0.06
+   ],
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     2.08,
+     2.25,
+     -6.17
+    ]
+   }
+  },
+  {
+   "material": {
+    "albedo": [
+     0.212,
+     0.224,
+     0.322
+    ],
+    "emission": null,
+    "emission_energy": 0.0,
+    "metallic": 0.0,
+    "roughness": 0.449999988079071,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "BoxMesh",
+   "name": "World/Cyber/Tower1",
+   "size": [
+    2.2,
+    5.7,
+    2.2
+   ],
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     6.4,
+     2.9,
+     -7.8
+    ]
+   }
+  },
+  {
+   "material": {
+    "albedo": [
+     0.91,
+     0.404,
+     0.729
+    ],
+    "emission": [
+     0.91,
+     0.404,
+     0.729
+    ],
+    "emission_energy": 2.79999995231628,
+    "metallic": 0.0,
+    "roughness": 0.800000011920929,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "BoxMesh",
+   "name": "World/Cyber/Strip1_0",
+   "size": [
+    1.9,
+    0.08,
+    0.04
+   ],
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     6.4,
+     5.0,
+     -6.67
+    ]
+   }
+  },
+  {
+   "material": {
+    "albedo": [
+     0.91,
+     0.404,
+     0.729
+    ],
+    "emission": [
+     0.91,
+     0.404,
+     0.729
+    ],
+    "emission_energy": 2.79999995231628,
+    "metallic": 0.0,
+    "roughness": 0.800000011920929,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "BoxMesh",
+   "name": "World/Cyber/Strip1_1",
+   "size": [
+    1.9,
+    0.08,
+    0.04
+   ],
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     6.4,
+     4.05,
+     -6.67
+    ]
+   }
+  },
+  {
+   "material": {
+    "albedo": [
+     0.91,
+     0.404,
+     0.729
+    ],
+    "emission": [
+     0.91,
+     0.404,
+     0.729
+    ],
+    "emission_energy": 2.79999995231628,
+    "metallic": 0.0,
+    "roughness": 0.800000011920929,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "BoxMesh",
+   "name": "World/Cyber/Strip1_2",
+   "size": [
+    1.9,
+    0.08,
+    0.04
+   ],
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     6.4,
+     3.1,
+     -6.67
+    ]
+   }
+  },
+  {
+   "material": {
+    "albedo": [
+     0.91,
+     0.404,
+     0.729
+    ],
+    "emission": [
+     0.91,
+     0.404,
+     0.729
+    ],
+    "emission_energy": 2.79999995231628,
+    "metallic": 0.0,
+    "roughness": 0.800000011920929,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "BoxMesh",
+   "name": "World/Cyber/Edge1",
+   "size": [
+    0.08,
+    5.7,
+    0.06
+   ],
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     5.28,
+     2.85,
+     -6.67
+    ]
+   }
+  },
+  {
+   "material": {
+    "albedo": [
+     0.212,
+     0.224,
+     0.322
+    ],
+    "emission": null,
+    "emission_energy": 0.0,
+    "metallic": 0.0,
+    "roughness": 0.449999988079071,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "BoxMesh",
+   "name": "World/Cyber/Tower2",
+   "size": [
+    2.2,
+    3.6,
+    2.2
+   ],
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     9.3,
+     1.85,
+     -6.7
+    ]
+   }
+  },
+  {
+   "material": {
+    "albedo": [
+     0.259,
+     0.922,
+     0.929
+    ],
+    "emission": [
+     0.259,
+     0.922,
+     0.929
+    ],
+    "emission_energy": 2.79999995231628,
+    "metallic": 0.0,
+    "roughness": 0.800000011920929,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "BoxMesh",
+   "name": "World/Cyber/Strip2_0",
+   "size": [
+    1.9,
+    0.08,
+    0.04
+   ],
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     9.3,
+     2.9,
+     -5.57
+    ]
+   }
+  },
+  {
+   "material": {
+    "albedo": [
+     0.259,
+     0.922,
+     0.929
+    ],
+    "emission": [
+     0.259,
+     0.922,
+     0.929
+    ],
+    "emission_energy": 2.79999995231628,
+    "metallic": 0.0,
+    "roughness": 0.800000011920929,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "BoxMesh",
+   "name": "World/Cyber/Strip2_1",
+   "size": [
+    1.9,
+    0.08,
+    0.04
+   ],
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     9.3,
+     1.95,
+     -5.57
+    ]
+   }
+  },
+  {
+   "material": {
+    "albedo": [
+     0.259,
+     0.922,
+     0.929
+    ],
+    "emission": [
+     0.259,
+     0.922,
+     0.929
+    ],
+    "emission_energy": 2.79999995231628,
+    "metallic": 0.0,
+    "roughness": 0.800000011920929,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "BoxMesh",
+   "name": "World/Cyber/Strip2_2",
+   "size": [
+    1.9,
+    0.08,
+    0.04
+   ],
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     9.3,
+     1.0,
+     -5.57
+    ]
+   }
+  },
+  {
+   "material": {
+    "albedo": [
+     0.91,
+     0.404,
+     0.729
+    ],
+    "emission": [
+     0.91,
+     0.404,
+     0.729
+    ],
+    "emission_energy": 2.79999995231628,
+    "metallic": 0.0,
+    "roughness": 0.800000011920929,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "BoxMesh",
+   "name": "World/Cyber/Edge2",
+   "size": [
+    0.08,
+    3.6,
+    0.06
+   ],
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     8.18,
+     1.8,
+     -5.57
+    ]
+   }
+  },
+  {
+   "material": {
+    "albedo": [
+     0.675,
+     0.698,
+     0.643
+    ],
+    "emission": null,
+    "emission_energy": 0.0,
+    "metallic": 0.0,
+    "roughness": 0.800000011920929,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "BoxMesh",
+   "name": "World/Cultivation/TempleBase",
+   "size": [
+    5.4,
+    0.6,
+    3.8
+   ],
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     -6.8,
+     0.3,
+     3.2
+    ]
+   }
+  },
+  {
+   "material": {
+    "albedo": [
+     0.675,
+     0.698,
+     0.643
+    ],
+    "emission": null,
+    "emission_energy": 0.0,
+    "metallic": 0.0,
+    "roughness": 0.800000011920929,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "BoxMesh",
+   "name": "World/Cultivation/Step1",
+   "size": [
+    3.0,
+    0.24,
+    1.2
+   ],
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     -6.8,
+     0.12,
+     5.7
+    ]
+   }
+  },
+  {
+   "material": {
+    "albedo": [
+     0.675,
+     0.698,
+     0.643
+    ],
+    "emission": null,
+    "emission_energy": 0.0,
+    "metallic": 0.0,
+    "roughness": 0.800000011920929,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "BoxMesh",
+   "name": "World/Cultivation/Step2",
+   "size": [
+    3.0,
+    0.28,
+    0.7
+   ],
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     -6.8,
+     0.3,
+     5.25
+    ]
+   }
+  },
+  {
+   "bottom_radius": 0.129999995231628,
+   "height": 2.29999995231628,
+   "material": {
+    "albedo": [
+     0.439,
+     0.29,
+     0.235
+    ],
+    "emission": null,
+    "emission_energy": 0.0,
+    "metallic": 0.0,
+    "roughness": 0.800000011920929,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "CylinderMesh",
+   "name": "World/Cultivation/Pillar0",
+   "top_radius": 0.129999995231628,
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     -9.0,
+     1.75,
+     2.0
+    ]
+   }
+  },
+  {
+   "bottom_radius": 0.129999995231628,
+   "height": 2.29999995231628,
+   "material": {
+    "albedo": [
+     0.439,
+     0.29,
+     0.235
+    ],
+    "emission": null,
+    "emission_energy": 0.0,
+    "metallic": 0.0,
+    "roughness": 0.800000011920929,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "CylinderMesh",
+   "name": "World/Cultivation/Pillar1",
+   "top_radius": 0.129999995231628,
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     -4.6,
+     1.75,
+     2.0
+    ]
+   }
+  },
+  {
+   "bottom_radius": 0.129999995231628,
+   "height": 2.29999995231628,
+   "material": {
+    "albedo": [
+     0.439,
+     0.29,
+     0.235
+    ],
+    "emission": null,
+    "emission_energy": 0.0,
+    "metallic": 0.0,
+    "roughness": 0.800000011920929,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "CylinderMesh",
+   "name": "World/Cultivation/Pillar2",
+   "top_radius": 0.129999995231628,
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     -9.0,
+     1.75,
+     4.4
+    ]
+   }
+  },
+  {
+   "bottom_radius": 0.129999995231628,
+   "height": 2.29999995231628,
+   "material": {
+    "albedo": [
+     0.439,
+     0.29,
+     0.235
+    ],
+    "emission": null,
+    "emission_energy": 0.0,
+    "metallic": 0.0,
+    "roughness": 0.800000011920929,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "CylinderMesh",
+   "name": "World/Cultivation/Pillar3",
+   "top_radius": 0.129999995231628,
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     -4.6,
+     1.75,
+     4.4
+    ]
+   }
+  },
+  {
+   "material": {
+    "albedo": [
+     0.137,
+     0.384,
+     0.427
+    ],
+    "emission": null,
+    "emission_energy": 0.0,
+    "metallic": 0.0,
+    "roughness": 0.800000011920929,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "BoxMesh",
+   "name": "World/Cultivation/RoofEaves",
+   "size": [
+    5.8,
+    0.2,
+    4.0
+   ],
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     -6.8,
+     3.0,
+     3.2
+    ]
+   }
+  },
+  {
+   "left_to_right": 0.5,
+   "material": {
+    "albedo": [
+     0.137,
+     0.384,
+     0.427
+    ],
+    "emission": null,
+    "emission_energy": 0.0,
+    "metallic": 0.0,
+    "roughness": 0.800000011920929,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "PrismMesh",
+   "name": "World/Cultivation/TempleRoof",
+   "size": [
+    5.6,
+    1.0,
+    3.8
+   ],
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     -6.8,
+     3.5,
+     3.2
+    ]
+   }
+  },
+  {
+   "bottom_radius": 0.209999993443489,
+   "height": 0.449999988079071,
+   "material": {
+    "albedo": [
+     1.0,
+     0.824,
+     0.58
+    ],
+    "emission": [
+     1.0,
+     0.824,
+     0.58
+    ],
+    "emission_energy": 2.79999995231628,
+    "metallic": 0.0,
+    "roughness": 0.800000011920929,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "CylinderMesh",
+   "name": "World/Cultivation/RedLantern0",
+   "top_radius": 0.209999993443489,
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     -9.0,
+     2.35,
+     5.15
+    ]
+   }
+  },
+  {
+   "bottom_radius": 0.209999993443489,
+   "height": 0.449999988079071,
+   "material": {
+    "albedo": [
+     1.0,
+     0.824,
+     0.58
+    ],
+    "emission": [
+     1.0,
+     0.824,
+     0.58
+    ],
+    "emission_energy": 2.79999995231628,
+    "metallic": 0.0,
+    "roughness": 0.800000011920929,
+    "transparency": false,
+    "unshaded": false
+   },
+   "mesh": "CylinderMesh",
+   "name": "World/Cultivation/RedLantern1",
+   "top_radius": 0.209999993443489,
+   "transform": {
+    "basis_x": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "basis_y": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "basis_z": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "origin": [
+     -4.6,
+     2.35,
+     5.15
+    ]
+   }
+  }
+ ],
+ "moon": {
+  "color": [
+   0.9,
+   0.86,
+   0.8
+  ],
+  "direction_light_travels": [
+   0.355,
+   -0.743,
+   -0.567
+  ],
+  "energy": 0.850000023841858
+ },
+ "particles": [
+  {
+   "amount": 36,
+   "center": [
+    6.5,
+    1.0,
+    5.5
+   ],
+   "name": "World/Fireflies",
+   "type": "fireflies"
+  },
+  {
+   "amount": 48,
+   "center": [
+    28.0,
+    0.9,
+    5.5
+   ],
+   "name": "World/FirefliesEastLowland",
+   "type": "fireflies"
+  },
+  {
+   "amount": 36,
+   "center": [
+    27.0,
+    1.8,
+    -7.0
+   ],
+   "name": "World/FirefliesEastHighland",
+   "type": "fireflies"
+  }
+ ],
+ "player": {
+  "spawn": [
+   0.0,
+   0.094,
+   1.4
+  ],
+  "speed": 4.0,
+  "sprite_offset_y": 0.75
+ },
+ "sprites": [
+  {
+   "center_position": [
+    -7.3,
+    0.79,
+    -1.5
+   ],
+   "flip_h": false,
+   "name": "World/City/NPC0",
+   "pixel_size": 0.0234375,
+   "texture": "characters/char_00_modern_youth.png"
+  },
+  {
+   "center_position": [
+    -5.1,
+    0.79,
+    -1.5
+   ],
+   "flip_h": false,
+   "name": "World/City/NPC1",
+   "pixel_size": 0.0234375,
+   "texture": "characters/char_01_cafe_clerk.png"
+  },
+  {
+   "center_position": [
+    4.7,
+    0.79,
+    -1.5
+   ],
+   "flip_h": false,
+   "name": "World/Cyber/NPC0",
+   "pixel_size": 0.0234375,
+   "texture": "characters/char_02_cyber_hacker.png"
+  },
+  {
+   "center_position": [
+    6.9,
+    0.79,
+    -1.5
+   ],
+   "flip_h": false,
+   "name": "World/Cyber/NPC1",
+   "pixel_size": 0.0234375,
+   "texture": "characters/char_03_cyborg_mercenary.png"
+  },
+  {
+   "center_position": [
+    -7.3,
+    0.79,
+    8.5
+   ],
+   "flip_h": false,
+   "name": "World/Cultivation/NPC0",
+   "pixel_size": 0.0234375,
+   "texture": "characters/char_04_white_robed_swordsman.png"
+  },
+  {
+   "center_position": [
+    -1.202,
+    0.79,
+    8.5
+   ],
+   "flip_h": false,
+   "name": "World/Cultivation/NPC1",
+   "pixel_size": 0.0234375,
+   "texture": "characters/char_05_jade_robed_cultivator.png"
+  },
+  {
+   "center_position": [
+    4.7,
+    0.79,
+    8.5
+   ],
+   "flip_h": false,
+   "name": "World/Wilderness/NPC0",
+   "pixel_size": 0.0234375,
+   "texture": "characters/char_06_forest_ranger.png"
+  },
+  {
+   "center_position": [
+    6.9,
+    0.79,
+    8.5
+   ],
+   "flip_h": false,
+   "name": "World/Wilderness/NPC1",
+   "pixel_size": 0.0234375,
+   "texture": "characters/char_07_explorer.png"
+  },
+  {
+   "center_position": [
+    0.0,
+    0.844,
+    1.4
+   ],
+   "flip_h": false,
+   "name": "Player/Sprite",
+   "pixel_size": 0.0234375,
+   "texture": "characters/char_00_modern_youth.png"
+  }
+ ],
+ "terrain": {
+  "cell_size": 1.6,
+  "ground_y_offset": 0.02,
+  "layer_height": 0.8,
+  "origin_cell": [
+   -7,
+   -6
+  ],
+  "rows_north_to_south": [
+   [
+    {
+     "biome": 0,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 0,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 0,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 0,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 0,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 0,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 0,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 1,
+     "level": 0,
+     "overlay": 1
+    },
+    {
+     "biome": 1,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 1,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 1,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 1,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 1,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 1,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 1,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 4
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 2,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 2,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 2,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 2,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 2,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 0
+    }
+   ],
+   [
+    {
+     "biome": 0,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 0,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 0,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 0,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 0,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 0,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 0,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 1,
+     "level": 0,
+     "overlay": 1
+    },
+    {
+     "biome": 1,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 1,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 1,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 1,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 1,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 1,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 1,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 4
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 2,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 2,
+     "overlay": 2
+    },
+    {
+     "biome": 3,
+     "level": 2,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 2,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 2,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 0
+    }
+   ],
+   [
+    {
+     "biome": 0,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 0,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 0,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 0,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 0,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 0,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 0,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 1,
+     "level": 0,
+     "overlay": 1
+    },
+    {
+     "biome": 1,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 1,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 1,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 1,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 1,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 1,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 1,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 4
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 2,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 2,
+     "overlay": 2
+    },
+    {
+     "biome": 3,
+     "level": 2,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 2,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 2,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 0
+    }
+   ],
+   [
+    {
+     "biome": 0,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 0,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 0,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 0,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 0,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 0,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 0,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 1,
+     "level": 0,
+     "overlay": 1
+    },
+    {
+     "biome": 1,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 1,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 1,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 1,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 1,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 1,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 1,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 2
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 2
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 2
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 2
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 12
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 2
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 2
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 2
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 18
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 0
+    }
+   ],
+   [
+    {
+     "biome": 0,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 0,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 0,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 0,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 0,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 0,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 0,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 1,
+     "level": 0,
+     "overlay": 1
+    },
+    {
+     "biome": 1,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 1,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 1,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 1,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 1,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 1,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 1,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 2
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 4
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 1,
+     "overlay": 0
+    }
+   ],
+   [
+    {
+     "biome": 0,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 0,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 0,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 0,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 0,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 0,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 0,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 1,
+     "level": 0,
+     "overlay": 1
+    },
+    {
+     "biome": 1,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 1,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 1,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 1,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 1,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 1,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 1,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 18
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": -1,
+     "overlay": 4
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    }
+   ],
+   [
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 1
+    },
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 1
+    },
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 1
+    },
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 1
+    },
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 1
+    },
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 1
+    },
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 1
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 1
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 1
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 1
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 1
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 1
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 1
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 1
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 1
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 1
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 1
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 1
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 1
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 1
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 1
+    },
+    {
+     "biome": 3,
+     "level": -1,
+     "overlay": 13
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 1
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 1
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 1
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 1
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 1
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 1
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 1
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 1
+    }
+   ],
+   [
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 1
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 2
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": -1,
+     "overlay": 4
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    }
+   ],
+   [
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 1
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 2
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": -1,
+     "overlay": 4
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    }
+   ],
+   [
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 1
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 2
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": -1,
+     "overlay": 4
+    },
+    {
+     "biome": 3,
+     "level": -1,
+     "overlay": 4
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    }
+   ],
+   [
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 1
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 2
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 2
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": -1,
+     "overlay": 4
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    }
+   ],
+   [
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 1
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 2
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": -1,
+     "overlay": 4
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    }
+   ],
+   [
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 2,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 1
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 2
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": -1,
+     "overlay": 4
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    },
+    {
+     "biome": 3,
+     "level": 0,
+     "overlay": 0
+    }
+   ]
+  ],
+  "size": [
+   30,
+   13
+  ],
+  "biome_ids": {
+   "0": "city",
+   "1": "cyber",
+   "2": "cultivation",
+   "3": "wild"
+  },
+  "overlay_bits": {
+   "1": "road (cobblestone dual-grid)",
+   "2": "dirt (dirt dual-grid)",
+   "4": "water (level = riverbed; water surface = (level+0.6)*layer_height)",
+   "8": "bridge (on a water cell; deck top = (level+1)*layer_height)",
+   "16": "ramp (level = bottom; rises toward the 4-neighbour that is exactly one level higher)"
+  }
+ },
+ "units": "meters, Y up, -Z = north (camera looks north)"
+}

@@ -1,0 +1,84 @@
+{
+  "idle": {
+    "source": "D:\\Project\\HD-2DMap\\meowa-call-logs\\4-制作主角基础动画\\outputs\\idle\\黄衣青年原地待机_轻微呼吸和衣服摆动_脚底位置稳定_保持原图的朝向_外形_配色和_10a5ded3\\result_output_url.webp",
+    "sha256": "6c17fe09760e766a6019944143987d9e35d952d00916a1a1b0b123cc044bbd81",
+    "canvas": [
+      80,
+      80
+    ],
+    "frames": 8,
+    "source_frame_order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "playback_fps": 8.0,
+    "frame_duration_weight": 1.0,
+    "processing": "Native WebP byte copy and lossless PNG frame decode; no scaling"
+  },
+  "run": {
+    "source": "D:\\Project\\HD-2DMap\\meowa-call-logs\\4-制作主角基础动画\\outputs\\run\\黄衣青年保持朝右的三分之四视角_原地轻跑_双腿交替迈步_手臂自然摆动_身体只有_1158b885\\result_output_url.webp",
+    "sha256": "725737d153be55c09e73b1f4a1e05fd55793c88021452fb786edc668e6799b95",
+    "canvas": [
+      80,
+      80
+    ],
+    "frames": 8,
+    "source_frame_order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "playback_fps": 12.0,
+    "frame_duration_weight": 1.0,
+    "processing": "Native WebP byte copy and lossless PNG frame decode; no scaling"
+  },
+  "idle_back": {
+    "source": "D:\\Project\\HD-2DMap\\artifacts\\player-back\\outputs\\idle-frames\\黄衣青年背对观众原地待机_仅胸背轻微呼吸_双脚和头部高度稳定_保持原图的头部_46170b0a\\result_output_url.webp",
+    "sha256": "60a453b44d06770ea6de8851de12b8192673acb2add0d56e5a56017e8915401c",
+    "canvas": [
+      80,
+      80
+    ],
+    "frames": 2,
+    "source_frame_order": [
+      0,
+      7
+    ],
+    "playback_fps": 8.0,
+    "frame_duration_weight": 4.0,
+    "processing": "Native frame selection and lossless WebP/PNG; no scaling"
+  },
+  "run_back": {
+    "source": "D:\\Project\\HD-2DMap\\artifacts\\player-back\\outputs\\run-frames\\黄衣青年背对观众原地小步轻跑_双腿连续交替迈步_双臂小幅交错摆动_身体轻微起_61a75e7a\\result_output_url.webp",
+    "sha256": "875793ce2e31ea3e3a85d7e2597a47b55c69b74186f673aa17825068d279cd6c",
+    "canvas": [
+      80,
+      80
+    ],
+    "frames": 8,
+    "source_frame_order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "playback_fps": 12.0,
+    "frame_duration_weight": 1.0,
+    "processing": "Native WebP byte copy and lossless PNG frame decode; no scaling"
+  }
+}

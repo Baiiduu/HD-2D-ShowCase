@@ -1,0 +1,22 @@
+{
+  "texture_size": 64,
+  "dimensions": "64x64",
+  "count": 1,
+  "matches": [
+    {
+      "reference_id": "texture-ce30a35c06d86852",
+      "name": "wood_plank",
+      "category": "road_floor",
+      "dimensions": "64x64",
+      "name_en": "wood_plank",
+      "name_zh": "条形木地板纹理",
+      "category_zh": "道路/地板",
+      "color_tags": [
+        "brown"
+      ],
+      "color_tags_zh": [
+        "棕色"
+      ]
+    }
+  ]
+}

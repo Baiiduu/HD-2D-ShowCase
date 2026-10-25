@@ -1,0 +1,160 @@
+[gd_scene format=3]
+
+[ext_resource type="Shader" path="res://shaders/halo.gdshader" id="halo_shader"]
+[ext_resource type="Script" path="res://scripts/environment_lantern.gd" id="controller"]
+[ext_resource type="Shader" path="res://shaders/environment_lantern_fog.gdshader" id="mist_shader"]
+[ext_resource type="Shader" path="res://shaders/lamp_beam.gdshader" id="beam_shader"]
+[ext_resource type="Shader" path="res://shaders/lamp_dust.gdshader" id="dust_shader"]
+
+[sub_resource type="StandardMaterial3D" id="Post_material"]
+albedo_color = Color(0.22, 0.15, 0.1, 1)
+roughness = 0.85
+
+[sub_resource type="BoxMesh" id="Post_mesh"]
+material = SubResource("Post_material")
+size = Vector3(0.09, 1.1, 0.09)
+
+[sub_resource type="StandardMaterial3D" id="Lamp_material"]
+resource_local_to_scene = true
+albedo_color = Color(1, 0.78, 0.5, 1)
+emission_enabled = true
+emission = Color(1, 0.7, 0.38, 1)
+emission_energy_multiplier = 3.5
+
+[sub_resource type="BoxMesh" id="Lamp_mesh"]
+resource_local_to_scene = true
+material = SubResource("Lamp_material")
+size = Vector3(0.2, 0.24, 0.2)
+
+[sub_resource type="BoxMesh" id="Cap_mesh"]
+material = SubResource("Post_material")
+size = Vector3(0.28, 0.05, 0.28)
+
+[sub_resource type="ShaderMaterial" id="Halo_material"]
+resource_local_to_scene = true
+render_priority = 0
+shader = ExtResource("halo_shader")
+shader_parameter/street_style = true
+
+[sub_resource type="QuadMesh" id="Halo_mesh"]
+resource_local_to_scene = true
+material = SubResource("Halo_material")
+size = Vector2(1.1, 1.1)
+
+[sub_resource type="ShaderMaterial" id="Mist_material"]
+resource_local_to_scene = true
+shader = ExtResource("mist_shader")
+
+[sub_resource type="ShaderMaterial" id="Beam_material"]
+resource_local_to_scene = true
+shader = ExtResource("beam_shader")
+shader_parameter/height = 1.12
+shader_parameter/gain = 0.08
+
+[sub_resource type="CylinderMesh" id="Beam_mesh"]
+resource_local_to_scene = true
+material = SubResource("Beam_material")
+top_radius = 0.02
+bottom_radius = 1.7
+height = 1.12
+radial_segments = 48
+cap_top = false
+cap_bottom = false
+
+[sub_resource type="Gradient" id="Dust_gradient"]
+offsets = PackedFloat32Array(0, 0.15, 0.75, 1)
+colors = PackedColorArray(1, 0.84, 0.48, 0, 1, 0.84, 0.48, 0.75, 1, 0.84, 0.48, 0.55, 1, 0.84, 0.48, 0)
+
+[sub_resource type="GradientTexture1D" id="Dust_ramp"]
+gradient = SubResource("Dust_gradient")
+
+[sub_resource type="ParticleProcessMaterial" id="Dust_process"]
+emission_shape = 3
+emission_box_extents = Vector3(0.85, 0.48, 0.85)
+direction = Vector3(0.15, 1, 0.1)
+spread = 180.0
+initial_velocity_min = 0.03
+initial_velocity_max = 0.08
+gravity = Vector3(0, 0, 0)
+scale_min = 0.65
+scale_max = 1.25
+color_ramp = SubResource("Dust_ramp")
+
+[sub_resource type="ShaderMaterial" id="Dust_material"]
+shader = ExtResource("dust_shader")
+shader_parameter/energy = 0.65
+
+[sub_resource type="QuadMesh" id="Dust_mesh"]
+material = SubResource("Dust_material")
+size = Vector2(0.028, 0.028)
+
+[node name="Lantern" type="Node3D" groups=["environment_lanterns"]]
+script = ExtResource("controller")
+
+[node name="Post" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.55, 0)
+mesh = SubResource("Post_mesh")
+
+[node name="Lamp" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.22, 0)
+cast_shadow = 0
+mesh = SubResource("Lamp_mesh")
+
+[node name="Cap" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.36, 0)
+mesh = SubResource("Cap_mesh")
+
+[node name="Light" type="OmniLight3D" parent="." groups=["shadow_lights"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.22, 0)
+light_color = Color(1, 0.72, 0.42, 1)
+light_energy = 2.2
+light_volumetric_fog_energy = 1.2
+shadow_enabled = true
+omni_range = 5.5
+
+[node name="WaterLight" type="OmniLight3D" parent="." groups=["shadow_lights"]]
+position = Vector3(0, 1.22, 0)
+light_cull_mask = 65536
+light_volumetric_fog_energy = 0.0
+shadow_enabled = true
+shadow_bias = 0.025
+shadow_normal_bias = 0.2
+omni_range = 5.5
+
+[node name="Cone" type="SpotLight3D" parent="." groups=["shadow_lights"]]
+position = Vector3(0, 1.13, 0)
+rotation_degrees = Vector3(-76, -90, 0)
+light_color = Color(1, 0.79, 0.53, 1)
+light_energy = 3.2
+light_volumetric_fog_energy = 16.0
+shadow_enabled = true
+shadow_normal_bias = 0.6
+spot_range = 4.4
+spot_angle = 57.0
+
+[node name="Mist" type="FogVolume" parent="."]
+position = Vector3(0, 0.6, 0)
+size = Vector3(3.8, 1.6, 3.8)
+material = SubResource("Mist_material")
+
+[node name="Dust" type="GPUParticles3D" parent="." groups=["street_light_dust"]]
+position = Vector3(0, 0.65, 0)
+cast_shadow = 0
+amount = 28
+lifetime = 12.0
+preprocess = 12.0
+randomness = 1.0
+visibility_aabb = AABB(-1.6, -0.8, -1.6, 3.2, 2, 3.2)
+process_material = SubResource("Dust_process")
+draw_pass_1 = SubResource("Dust_mesh")
+
+[node name="Beam" type="MeshInstance3D" parent="." groups=["light_beams"]]
+layers = 131072
+cast_shadow = 0
+gi_mode = 0
+mesh = SubResource("Beam_mesh")
+
+[node name="Halo" type="MeshInstance3D" parent="." groups=["environment_lantern_halos"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.22, 0)
+cast_shadow = 0
+mesh = SubResource("Halo_mesh")

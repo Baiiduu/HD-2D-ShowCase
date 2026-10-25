@@ -1,0 +1,28 @@
+{
+  "job_id": "job_cdbef3bc76d845659de419c4bdf415ab",
+  "source": "D:\\Project\\HD-2DMap\\demoWithMeowa\\1\\assets\\meowa\\audio\\wind_source.mp3",
+  "source_sha256": "1e77176b4719842a1ce8dfb834382a743e612804973f6bd442539b33520d6b23",
+  "output": "D:\\Project\\HD-2DMap\\demoWithMeowa\\1\\assets\\meowa\\audio\\wind.wav",
+  "output_sha256": "c8fabff26265ae1e55abf05e2d16d8c7c30b7f730d757909ad095f1b59d63883",
+  "duration_seconds": 10,
+  "sample_rate": 48000,
+  "processing": {
+    "highpass_hz": 100,
+    "lowpass_hz": 3500,
+    "compression_ratio": 3,
+    "rms_envelope_ms": 30,
+    "gain_smoothing_ms": 80,
+    "threshold_percentile": 75,
+    "rms_target_dbfs": -30,
+    "soft_limit_dbfs": -17,
+    "loop_overlap_ms": 120,
+    "length_restore_ratio": "250/247",
+    "generated_source_only": true
+  },
+  "source_peak_dbfs": -3.4254361226908743,
+  "source_rms_dbfs": -18.77404117190058,
+  "final_peak_dbfs": -18.67450386101436,
+  "final_rms_dbfs": -30.446702383616355,
+  "clipped_samples": 0,
+  "boundary_step_dbfs": -47.05970923349864
+}

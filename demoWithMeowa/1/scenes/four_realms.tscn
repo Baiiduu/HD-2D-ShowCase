@@ -1,0 +1,1396 @@
+[gd_scene format=4 uid="uid://dyh2hfsv2xv4g"]
+
+[ext_resource type="Script" uid="uid://srckk3f4b30t" path="res://scripts/art_direction.gd" id="art_direction"]
+[ext_resource type="Script" uid="uid://yq5plellwbbv" path="res://scripts/bgm.gd" id="bgm"]
+[ext_resource type="Shader" uid="uid://duhny4lanykqa" path="res://shaders/cliff.gdshader" id="cliff_shader"]
+[ext_resource type="Shader" uid="uid://bhqytu36o1qiy" path="res://shaders/lamp_cone_fog.gdshader" id="cone_fog"]
+[ext_resource type="Script" uid="uid://b63uoy4636ic5" path="res://scripts/ground_dressing_region.gd" id="dressing_region"]
+[ext_resource type="Shader" uid="uid://syr3vpca6sp4" path="res://shaders/firefly.gdshader" id="firefly_shader"]
+[ext_resource type="Script" uid="uid://c4p56r7qm7y5b" path="res://scripts/follow_camera.gd" id="follow_camera"]
+[ext_resource type="Texture2D" uid="uid://caeyg3ancboj0" path="res://assets/ground/references/04_road_cobblestone.png" id="ground_city"]
+[ext_resource type="Texture2D" uid="uid://cumfrvpaoxiij" path="res://assets/ground/cultivation/精致像素风灰青色青石板地面材质_长方形石板规则错缝铺设_细而清晰的深色砖缝_40699501/texture.png" id="ground_cultivation"]
+[ext_resource type="Texture2D" uid="uid://xgbm1di6oawd" path="res://assets/ground/references/03_floor_lab_metal_panel.png" id="ground_cyber"]
+[ext_resource type="Script" uid="uid://cfvh3q5a8be5u" path="res://scripts/ground_dressing.gd" id="ground_dressing"]
+[ext_resource type="Texture2D" uid="uid://bblb2p0f7uhds" path="res://assets/ground/references/grass/01_grass_mossy.png" id="ground_grass"]
+[ext_resource type="Shader" uid="uid://yl6y2vskn20o" path="res://shaders/terrain.gdshader" id="ground_shader"]
+[ext_resource type="Shader" uid="uid://dqhth3orbkenk" path="res://shaders/halo.gdshader" id="halo_shader"]
+[ext_resource type="Shader" uid="uid://bxgbbij832jo1" path="res://shaders/lamp_beam.gdshader" id="lamp_beam"]
+[ext_resource type="Shader" uid="uid://btq86vm2xekqy" path="res://shaders/lamp_dust.gdshader" id="lamp_dust"]
+[ext_resource type="PackedScene" path="res://scenes/props/lantern.tscn" id="lantern_scene"]
+[ext_resource type="Script" uid="uid://c3bn768plavjr" path="res://scripts/player.gd" id="player"]
+[ext_resource type="Script" path="res://scripts/character_lighting.gd" id="character_lighting"]
+[ext_resource type="SpriteFrames" uid="uid://65qht0ymca02" path="res://assets/meowa/player/animations.tres" id="player_frames"]
+[ext_resource type="Shader" uid="uid://fuoorj3rrv6c" path="res://shaders/post_process.gdshader" id="post_shader"]
+[ext_resource type="Shader" uid="uid://vs810xu7skxb" path="res://shaders/night_sky.gdshader" id="sky_shader"]
+[ext_resource type="Resource" path="res://data/four_realms_terrain.tres" id="terrain_data"]
+[ext_resource type="Script" uid="uid://bl1cnu18o3dyt" path="res://scripts/terrain/terrain.gd" id="terrain_script"]
+[ext_resource type="Texture2D" uid="uid://c6wp3gerei542" path="res://assets/meowa/characters/八个同一精致像素画风的全身游戏角色_现代城市青年_咖啡店店员_赛博朋克女黑客_fb335224/sprite_00.png" id="tex_17"]
+[ext_resource type="Texture2D" uid="uid://b6fp44n0nrxg4" path="res://assets/meowa/characters/八个同一精致像素画风的全身游戏角色_现代城市青年_咖啡店店员_赛博朋克女黑客_fb335224/sprite_01.png" id="tex_18"]
+[ext_resource type="Texture2D" uid="uid://c2gdw1hbmbkjc" path="res://assets/meowa/characters/八个同一精致像素画风的全身游戏角色_现代城市青年_咖啡店店员_赛博朋克女黑客_fb335224/sprite_02.png" id="tex_19"]
+[ext_resource type="Texture2D" uid="uid://b7i5da22rsp3m" path="res://assets/meowa/characters/八个同一精致像素画风的全身游戏角色_现代城市青年_咖啡店店员_赛博朋克女黑客_fb335224/sprite_03.png" id="tex_20"]
+[ext_resource type="Texture2D" uid="uid://bqfmnoj1f0y78" path="res://assets/meowa/characters/八个同一精致像素画风的全身游戏角色_现代城市青年_咖啡店店员_赛博朋克女黑客_fb335224/sprite_04.png" id="tex_21"]
+[ext_resource type="Texture2D" uid="uid://rjqcmjs1e4f4" path="res://assets/meowa/characters/八个同一精致像素画风的全身游戏角色_现代城市青年_咖啡店店员_赛博朋克女黑客_fb335224/sprite_05.png" id="tex_22"]
+[ext_resource type="Texture2D" uid="uid://dj7h3hu4qtadl" path="res://assets/meowa/characters/八个同一精致像素画风的全身游戏角色_现代城市青年_咖啡店店员_赛博朋克女黑客_fb335224/sprite_06.png" id="tex_23"]
+[ext_resource type="Texture2D" uid="uid://ji2khhifypkh" path="res://assets/meowa/characters/八个同一精致像素画风的全身游戏角色_现代城市青年_咖啡店店员_赛博朋克女黑客_fb335224/sprite_07.png" id="tex_24"]
+[ext_resource type="Texture2D" uid="uid://ds157g1oxjl3m" path="res://assets/ground/generated/cliff/Pixel_art_earthen_cliff_face_seen_from_the_side_horizontal_layered_rock_strata_in_warm_brown_and_gray_small_cracks/texture.png" id="tex_cliff"]
+[ext_resource type="Texture2D" uid="uid://cd1l4h0iojdtu" path="res://assets/ground/references/elevation/01_wood_plank.png" id="tex_planks"]
+[ext_resource type="Texture2D" uid="uid://netuv20ao0uy" path="res://assets/ground/references/elevation/01_liquid_water_shallow.png" id="tex_water"]
+[ext_resource type="Texture2D" uid="uid://dgthxbtp632a2" path="res://assets/ground/tilesets/dirt/tileset/tileset.png" id="tileset_dirt"]
+[ext_resource type="Texture2D" uid="uid://bhp0fawqqvcne" path="res://assets/ground/tilesets/path/tileset/tileset.png" id="tileset_path"]
+[ext_resource type="Shader" uid="uid://srqt368qg3a" path="res://shaders/waterfall.gdshader" id="waterfall_shader"]
+[ext_resource type="Script" uid="uid://ce7x51clpltsu" path="res://scripts/planar_water_reflection.gd" id="water_reflection"]
+[ext_resource type="Shader" uid="uid://ckds5ydk553f1" path="res://shaders/water.gdshader" id="water_shader"]
+[ext_resource type="Script" uid="uid://coc5io4jx6oy3" path="res://scripts/weather.gd" id="weather"]
+[ext_resource type="Script" uid="uid://cbecgwsphexb0" path="res://scripts/four_realms.gd" id="world"]
+
+[sub_resource type="ShaderMaterial" id="Sky_material"]
+shader = ExtResource("sky_shader")
+shader_parameter/zenith_color = Color(0.05, 0.05, 0.11, 1)
+shader_parameter/horizon_color = Color(0.38, 0.35, 0.4, 1)
+shader_parameter/fog_color = Color(0.38, 0.35, 0.4, 1)
+shader_parameter/silhouette_color = Color(0.1, 0.09, 0.13, 1)
+shader_parameter/glow_color = Color(0.75, 0.42, 0.24, 1)
+shader_parameter/glow_strength = 0.5
+shader_parameter/moon_glow_color = Color(0.55, 0.62, 0.85, 1)
+shader_parameter/star_density = 0.01
+shader_parameter/pixel_angle = 0.004
+
+[sub_resource type="Sky" id="Sky_night"]
+sky_material = SubResource("Sky_material")
+radiance_size = 2
+
+[sub_resource type="Environment" id="Environment_20"]
+background_mode = 2
+background_color = Color(0.07059, 0.10588, 0.18039, 1)
+sky = SubResource("Sky_night")
+ambient_light_source = 2
+ambient_light_color = Color(0.5, 0.52, 0.6, 1)
+ambient_light_energy = 0.6
+reflected_light_source = 2
+tonemap_mode = 3
+tonemap_exposure = 0.86
+tonemap_white = 6.0
+ssr_enabled = true
+ssr_max_steps = 96
+ssr_fade_in = 0.1
+ssr_fade_out = 2.5
+ssr_depth_tolerance = 0.4
+ssao_enabled = true
+ssao_intensity = 2.2
+ssao_power = 1.6
+ssao_detail = 0.7
+ssao_light_affect = 0.15
+ssil_enabled = true
+ssil_intensity = 1.6
+glow_enabled = true
+glow_levels/2 = 0.6
+glow_levels/3 = 0.8
+glow_levels/5 = 0.6
+glow_intensity = 0.18
+glow_strength = 1.05
+glow_bloom = 0.04
+fog_enabled = true
+fog_mode = 1
+fog_light_color = Color(0.38, 0.35, 0.4, 1)
+fog_density = 0.0
+fog_sky_affect = 0.0
+fog_height = -0.3
+fog_height_density = 0.06
+fog_depth_begin = 21.5
+fog_depth_end = 99.0
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.006
+volumetric_fog_albedo = Color(0.75, 0.85, 0.92, 1)
+volumetric_fog_length = 40.0
+volumetric_fog_ambient_inject = 0.2
+volumetric_fog_sky_affect = 0.0
+adjustment_enabled = true
+adjustment_brightness = 1.06
+adjustment_contrast = 1.2
+adjustment_saturation = 1.45
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributes_follow"]
+dof_blur_far_enabled = true
+dof_blur_near_enabled = true
+
+[sub_resource type="ShaderMaterial" id="Terrain_material"]
+resource_name = "Unified terrain"
+render_priority = 0
+shader = ExtResource("ground_shader")
+shader_parameter/city_texture = ExtResource("ground_city")
+shader_parameter/cyber_texture = ExtResource("ground_cyber")
+shader_parameter/cultivation_texture = ExtResource("ground_cultivation")
+shader_parameter/wild_texture = ExtResource("ground_grass")
+shader_parameter/path_atlas = ExtResource("tileset_path")
+shader_parameter/dirt_atlas = ExtResource("tileset_dirt")
+shader_parameter/wetness = 0.6
+shader_parameter/wet_darkening = 0.65
+shader_parameter/wet_roughness = 0.16
+shader_parameter/puddles = false
+shader_parameter/puddle_threshold = 0.6
+shader_parameter/puddle_darkening = 0.45
+shader_parameter/puddle_roughness = 0.02
+shader_parameter/texture_pixels = 64.0
+shader_parameter/stone_relief = 0.006
+shader_parameter/stone_gloss_variation = 0.55
+shader_parameter/grass_lighting_enabled = true
+shader_parameter/grass_relief = 0.008
+shader_parameter/grass_wet_response = 0.2
+shader_parameter/grass_root_occlusion = 0.3
+shader_parameter/grass_root_bounds = Vector4(0, 0, 1, 1)
+shader_parameter/rain_amount = 0.7
+shader_parameter/rain_clock = 548.9214533332047
+shader_parameter/rain_density = 0.9
+shader_parameter/rain_radius = 0.11
+shader_parameter/rain_strength = 0.32
+shader_parameter/weather_wetness = 0.08399999999999999
+shader_parameter/edge_fade_distance = 0.0
+shader_parameter/edge_fog_color = Color(0.38, 0.35, 0.4, 1)
+shader_parameter/map_origin = Vector2i(0, 0)
+shader_parameter/cell_size = 1.6
+shader_parameter/city_tint = Color(0.92, 0.95, 1, 1)
+shader_parameter/cyber_tint = Color(0.3, 0.35, 0.46, 1)
+shader_parameter/cultivation_tint = Color(0.92, 1, 0.98, 1)
+shader_parameter/wild_tint = Color(0.78, 0.91, 0.82, 1)
+shader_parameter/path_tint = Color(1, 1, 1, 1)
+shader_parameter/dirt_tint = Color(0.82, 0.9, 0.84, 1)
+shader_parameter/city_surface = Vector3(0.72, 0, 1)
+shader_parameter/cyber_surface = Vector3(0.35, 0.35, 1)
+shader_parameter/cultivation_surface = Vector3(0.6, 0, 0.85)
+shader_parameter/wild_surface = Vector3(0.97, 0, 0)
+shader_parameter/path_surface = Vector3(0.74, 0, 1)
+shader_parameter/dirt_surface = Vector3(0.95, 0, 0.6)
+
+[sub_resource type="ShaderMaterial" id="Cliff_material"]
+resource_name = "Cliff"
+render_priority = 0
+shader = ExtResource("cliff_shader")
+shader_parameter/wall_texture = ExtResource("tex_cliff")
+shader_parameter/tint = Color(0.92, 0.88, 0.82, 1)
+shader_parameter/saturation = 0.55
+shader_parameter/texel = 0.025
+shader_parameter/lip_pixels = 3
+shader_parameter/lip_shadow_pixels = 2
+shader_parameter/base_shadow_height = 0.5
+shader_parameter/base_shadow_strength = 0.45
+shader_parameter/roughness = 0.9
+shader_parameter/transition_enabled = true
+shader_parameter/grass_texture = ExtResource("ground_grass")
+shader_parameter/grass_tint = Color(0.78, 0.91, 0.82, 1)
+shader_parameter/map_origin = Vector2i(-7, -6)
+shader_parameter/cell_size = 1.6
+shader_parameter/grass_lip_pixels = 3.0
+shader_parameter/edge_variation_pixels = 2.0
+shader_parameter/transition_height = 0.16
+shader_parameter/moss_strength = 0.4
+shader_parameter/lip_shadow_strength = 0.16
+shader_parameter/base_blend_height = 0.16
+
+[sub_resource type="ShaderMaterial" id="Water_material"]
+resource_name = "Water"
+render_priority = 0
+shader = ExtResource("water_shader")
+shader_parameter/water_texture = ExtResource("tex_water")
+shader_parameter/map_origin = Vector2i(-7, -6)
+shader_parameter/shallow_color = Color(0.26, 0.46, 0.5, 1)
+shader_parameter/deep_color = Color(0.1, 0.25, 0.3, 1)
+shader_parameter/foam_color = Color(0.78, 0.85, 0.85, 1)
+shader_parameter/foam_scale = 1.0
+shader_parameter/foam_density = 0.55
+shader_parameter/foam_motion = 0.08
+shader_parameter/bank_foam_width = 0.14
+shader_parameter/foam_strength = 0.8
+shader_parameter/flow = Vector2(0, 0.12)
+shader_parameter/cell_size = 1.6
+shader_parameter/texture_pixels = 64.0
+shader_parameter/foam_distance = 0.12
+shader_parameter/depth_fade = 1.6
+shader_parameter/opacity = 0.86
+shader_parameter/wave_strength = 0.08
+shader_parameter/highlight_strength = 1.0
+shader_parameter/highlight_roughness = 0.22
+shader_parameter/glint_strength = 0.8
+shader_parameter/reflection_strength = 0.85
+shader_parameter/reflection_matrix_0 = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/reflection_matrix_1 = Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+shader_parameter/reflection_heights = Vector2(-0.32, 0.48)
+shader_parameter/reflection_enabled_0 = false
+shader_parameter/reflection_enabled_1 = false
+shader_parameter/rain_amount = 0.7
+shader_parameter/rain_clock = 548.9214533332047
+shader_parameter/rain_density = 1.8
+shader_parameter/rain_radius = 0.28
+shader_parameter/rain_lifetime = 0.8
+shader_parameter/rain_strength = 0.35
+
+[sub_resource type="ShaderMaterial" id="Waterfall_material"]
+resource_name = "Waterfall"
+render_priority = 0
+shader = ExtResource("waterfall_shader")
+shader_parameter/water_color = Color(0.18, 0.32, 0.38, 1)
+shader_parameter/streak_color = Color(0.5, 0.68, 0.72, 1)
+shader_parameter/foam_color = Color(0.78, 0.85, 0.85, 1)
+shader_parameter/foam_scale = 1.0
+shader_parameter/foam_density = 0.55
+shader_parameter/foam_motion = 0.08
+shader_parameter/foam_flow = Vector2(0, 1)
+shader_parameter/splash_size = 0.055
+shader_parameter/splash_density = 0.6
+shader_parameter/speed = 2.2
+shader_parameter/texture_pixels = 64.0
+shader_parameter/cell_size = 1.6
+shader_parameter/lip_curve = 0.18
+shader_parameter/opacity = 0.72
+shader_parameter/stream_contrast = 0.9
+shader_parameter/foam_strength = 0.85
+shader_parameter/foam_length = 0.65
+shader_parameter/splash_strength = 0.65
+shader_parameter/glow = 0.025
+
+[sub_resource type="StandardMaterial3D" id="Bridge_material"]
+resource_name = "Bridge planks"
+albedo_texture = ExtResource("tex_planks")
+roughness = 0.85
+uv1_scale = Vector3(0.625, 0.625, 0.625)
+uv1_triplanar = true
+uv1_world_triplanar = true
+texture_filter = 2
+
+[sub_resource type="Gradient" id="Firefly_gradient"]
+offsets = PackedFloat32Array(0, 0.2, 0.45, 0.6, 0.85, 1)
+colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0.25, 1, 1, 1, 1, 1, 1, 1, 0.6, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture1D" id="Firefly_ramp"]
+gradient = SubResource("Firefly_gradient")
+
+[sub_resource type="ParticleProcessMaterial" id="Firefly_process"]
+emission_shape = 3
+emission_box_extents = Vector3(4.5, 0.7, 3.5)
+direction = Vector3(0, 1, 0)
+spread = 180.0
+initial_velocity_min = 0.05
+initial_velocity_max = 0.25
+gravity = Vector3(0, 0, 0)
+scale_min = 0.7
+scale_max = 1.3
+color_ramp = SubResource("Firefly_ramp")
+turbulence_enabled = true
+turbulence_noise_strength = 0.6
+turbulence_noise_scale = 3.0
+turbulence_influence_min = 0.05
+turbulence_influence_max = 0.15
+
+[sub_resource type="ShaderMaterial" id="Firefly_material"]
+render_priority = 0
+shader = ExtResource("firefly_shader")
+shader_parameter/glow_color = Color(0.75, 1, 0.45, 1)
+shader_parameter/energy = 2.6
+shader_parameter/softness = 0.7
+shader_parameter/pulse_strength = 0.55
+shader_parameter/pulse_speed = 0.35
+
+[sub_resource type="QuadMesh" id="Firefly_mesh"]
+material = SubResource("Firefly_material")
+size = Vector2(0.045, 0.045)
+
+[sub_resource type="FogMaterial" id="Mist_material"]
+density = 0.18
+albedo = Color(0.85, 0.92, 1, 1)
+height_falloff = 1.5
+edge_fade = 0.6
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_11"]
+resource_name = "Plaster"
+albedo_color = Color(0.7098, 0.63922, 0.54118, 1)
+roughness = 0.8
+
+[sub_resource type="BoxMesh" id="BoxMesh_31"]
+size = Vector3(3, 3.3, 2.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_32"]
+size = Vector3(3, 3.3, 2.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_12"]
+resource_name = "Brick"
+albedo_color = Color(0.53333, 0.39608, 0.33725, 1)
+roughness = 0.8
+
+[sub_resource type="BoxMesh" id="BoxMesh_33"]
+size = Vector3(3.35, 0.35, 2.85)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_15"]
+resource_name = "Amber emission"
+albedo_color = Color(1, 0.82353, 0.58039, 1)
+roughness = 0.8
+emission_enabled = true
+emission = Color(1, 0.82353, 0.58039, 1)
+emission_energy_multiplier = 2.8
+
+[sub_resource type="BoxMesh" id="BoxMesh_34"]
+size = Vector3(0.64, 0.85, 0.035)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7"]
+resource_name = "Wood"
+albedo_color = Color(0.43922, 0.2902, 0.23529, 1)
+roughness = 0.8
+
+[sub_resource type="BoxMesh" id="BoxMesh_35"]
+size = Vector3(0.7, 1.2, 0.04)
+
+[sub_resource type="BoxMesh" id="BoxMesh_36"]
+size = Vector3(3, 4.4, 2.7)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_37"]
+size = Vector3(3, 4.4, 2.7)
+
+[sub_resource type="BoxMesh" id="BoxMesh_38"]
+size = Vector3(3.35, 0.35, 3.05)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1"]
+resource_name = "Slate"
+albedo_color = Color(0.25098, 0.31765, 0.41569, 1)
+roughness = 0.8
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_39"]
+top_radius = 0.055
+bottom_radius = 0.055
+height = 2.5
+radial_segments = 12
+rings = 1
+
+[sub_resource type="StandardMaterial3D" id="Street_lamp_material"]
+resource_name = "Street lamp warm core"
+albedo_color = Color(0.82, 0.66, 0.43, 1)
+roughness = 0.8
+emission_enabled = true
+emission = Color(1, 0.84, 0.6, 1)
+emission_energy_multiplier = 1.6
+
+[sub_resource type="BoxMesh" id="BoxMesh_40"]
+size = Vector3(0.27, 0.35, 0.27)
+
+[sub_resource type="ShaderMaterial" id="Street_halo_material"]
+render_priority = 0
+shader = ExtResource("halo_shader")
+shader_parameter/energy = 0.9
+shader_parameter/pixels = 28.0
+shader_parameter/falloff = 2.4
+shader_parameter/street_style = true
+shader_parameter/front_offset = 0.3
+shader_parameter/reflection_height_0 = -0.32
+shader_parameter/reflection_height_1 = 0.48
+
+[sub_resource type="QuadMesh" id="Halo_large"]
+material = SubResource("Street_halo_material")
+size = Vector2(1.6, 1.6)
+
+[sub_resource type="ShaderMaterial" id="Lamp_fog"]
+shader = ExtResource("cone_fog")
+shader_parameter/density = 0.085
+shader_parameter/texture_strength = 0.65
+shader_parameter/wisp_scale = 1.0
+shader_parameter/drift_speed = 0.035
+shader_parameter/scattering_color = Color(0.9, 0.92, 0.95, 1)
+
+[sub_resource type="Gradient" id="Dust_gradient"]
+offsets = PackedFloat32Array(0, 0.15, 0.75, 1)
+colors = PackedColorArray(1, 0.84, 0.48, 0, 1, 0.84, 0.48, 0.75, 1, 0.84, 0.48, 0.55, 1, 0.84, 0.48, 0)
+
+[sub_resource type="GradientTexture1D" id="Dust_ramp"]
+gradient = SubResource("Dust_gradient")
+
+[sub_resource type="ParticleProcessMaterial" id="Dust_process"]
+emission_shape = 3
+emission_box_extents = Vector3(0.85, 1.03, 0.85)
+direction = Vector3(0.15, 1, 0.1)
+spread = 180.0
+initial_velocity_min = 0.03
+initial_velocity_max = 0.08
+gravity = Vector3(0, 0, 0)
+scale_min = 0.65
+scale_max = 1.25
+color_ramp = SubResource("Dust_ramp")
+
+[sub_resource type="ShaderMaterial" id="Dust_material"]
+render_priority = 0
+shader = ExtResource("lamp_dust")
+shader_parameter/energy = 0.65
+
+[sub_resource type="QuadMesh" id="Dust_mesh"]
+material = SubResource("Dust_material")
+size = Vector2(0.028, 0.028)
+
+[sub_resource type="ShaderMaterial" id="Beam_material"]
+render_priority = 0
+shader = ExtResource("lamp_beam")
+shader_parameter/height = 2.36
+shader_parameter/gain = 0.055
+
+[sub_resource type="CylinderMesh" id="Beam_mesh"]
+material = SubResource("Beam_material")
+top_radius = 0.12
+bottom_radius = 1.6
+height = 2.36
+radial_segments = 32
+rings = 8
+cap_top = false
+cap_bottom = false
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_13"]
+resource_name = "Cyber tower"
+albedo_color = Color(0.21176, 0.22353, 0.32157, 1)
+roughness = 0.45
+
+[sub_resource type="BoxMesh" id="BoxMesh_41"]
+size = Vector3(2.2, 4.5, 2.2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_42"]
+size = Vector3(2.2, 4.5, 2.2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_16"]
+resource_name = "Cyan emission"
+albedo_color = Color(0.25882, 0.92157, 0.92941, 1)
+roughness = 0.8
+emission_enabled = true
+emission = Color(0.25882, 0.92157, 0.92941, 1)
+emission_energy_multiplier = 2.8
+
+[sub_resource type="BoxMesh" id="BoxMesh_43"]
+size = Vector3(1.9, 0.08, 0.04)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_17"]
+resource_name = "Magenta emission"
+albedo_color = Color(0.9098, 0.40392, 0.72941, 1)
+roughness = 0.8
+emission_enabled = true
+emission = Color(0.9098, 0.40392, 0.72941, 1)
+emission_energy_multiplier = 2.8
+
+[sub_resource type="BoxMesh" id="BoxMesh_44"]
+size = Vector3(0.08, 4.5, 0.06)
+
+[sub_resource type="BoxMesh" id="BoxMesh_45"]
+size = Vector3(2.2, 5.7, 2.2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_46"]
+size = Vector3(2.2, 5.7, 2.2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_47"]
+size = Vector3(0.08, 5.7, 0.06)
+
+[sub_resource type="BoxMesh" id="BoxMesh_48"]
+size = Vector3(2.2, 3.6, 2.2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_49"]
+size = Vector3(2.2, 3.6, 2.2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_50"]
+size = Vector3(0.08, 3.6, 0.06)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_14"]
+resource_name = "Pale stone"
+albedo_color = Color(0.67451, 0.69804, 0.64314, 1)
+roughness = 0.8
+
+[sub_resource type="BoxMesh" id="BoxMesh_52"]
+size = Vector3(5.4, 0.6, 3.8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_53"]
+size = Vector3(5.4, 0.6, 3.8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_54"]
+size = Vector3(3, 0.24, 1.2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_55"]
+size = Vector3(3, 0.28, 0.7)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_56"]
+top_radius = 0.13
+bottom_radius = 0.13
+height = 2.3
+radial_segments = 12
+rings = 1
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8"]
+resource_name = "Jade roof"
+albedo_color = Color(0.13725, 0.38431, 0.42745, 1)
+roughness = 0.8
+
+[sub_resource type="BoxMesh" id="BoxMesh_57"]
+size = Vector3(5.8, 0.2, 4)
+
+[sub_resource type="PrismMesh" id="PrismMesh_58"]
+size = Vector3(5.6, 1, 3.8)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_59"]
+top_radius = 0.21
+bottom_radius = 0.21
+height = 0.45
+radial_segments = 12
+rings = 1
+
+[sub_resource type="ShaderMaterial" id="Halo_material"]
+render_priority = 0
+shader = ExtResource("halo_shader")
+shader_parameter/energy = 0.35
+shader_parameter/pixels = 28.0
+shader_parameter/falloff = 2.4
+shader_parameter/street_style = false
+shader_parameter/front_offset = 0.0
+shader_parameter/reflection_height_0 = -0.32
+shader_parameter/reflection_height_1 = 0.48
+
+[sub_resource type="QuadMesh" id="Halo_small"]
+material = SubResource("Halo_material")
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_66"]
+radius = 0.24
+height = 1.06592
+
+[sub_resource type="ShaderMaterial" id="Post_material"]
+shader = ExtResource("post_shader")
+shader_parameter/ellipse_enabled = false
+shader_parameter/ellipse_center = Vector2(0.5, 0.5)
+shader_parameter/ellipse_radius = Vector2(0.34, 0.27)
+shader_parameter/ellipse_transition = 0.7
+shader_parameter/ellipse_blur_amount = 0.03
+shader_parameter/lens_enabled = false
+shader_parameter/lens_drop_count = 0
+shader_parameter/lens_drops = PackedVector4Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+shader_parameter/lens_drop_shapes = PackedVector4Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+shader_parameter/lens_blur = 1.0
+shader_parameter/lens_refraction = 9.0
+shader_parameter/lens_irregularity = 0.7
+shader_parameter/lens_light_response = 0.55
+shader_parameter/lens_rim_strength = 0.18
+shader_parameter/lens_center_protection = 0.14
+shader_parameter/vignette_strength = 0.3
+shader_parameter/vignette_radius = 0.85
+shader_parameter/shadow_tint = Color(0.86, 0.94, 1.12, 1)
+shader_parameter/highlight_tint = Color(1.08, 1, 0.9, 1)
+shader_parameter/split_toning = 0.25
+
+[sub_resource type="SystemFont" id="SystemFont_21"]
+font_names = PackedStringArray("Microsoft YaHei", "Noto Sans CJK SC")
+subpixel_positioning = 0
+
+[sub_resource type="Theme" id="Theme_22"]
+default_font = SubResource("SystemFont_21")
+default_font_size = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_23"]
+bg_color = Color(0.045, 0.065, 0.105, 0.92)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.3, 0.46, 0.54, 0.5)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[node name="FourRealms" type="Node3D" unique_id=915952997]
+script = ExtResource("world")
+
+[node name="ArtDirection" type="Node" parent="." unique_id=1990673868 node_paths=PackedStringArray("world_environment", "moon", "terrain", "post_process", "water_reflection")]
+script = ExtResource("art_direction")
+world_environment = NodePath("../WorldEnvironment")
+moon = NodePath("../Moon")
+terrain = NodePath("../World/Ground")
+post_process = NodePath("../PostProcess/Screen")
+water_reflection = NodePath("../WaterReflection")
+exposure = 0.8600000000000001
+brightness = 1.06
+contrast = 1.2
+saturation = 1.45
+bloom = 0.18
+ambient_color = Color(0.5, 0.52, 0.6, 1)
+ambient_energy = 0.6
+moon_color = Color(0.82, 0.87, 1, 1)
+moon_energy = 0.7
+fog_begin = 21.5
+fog_end = 99.0
+fog_amount = 0.0
+low_fog = 0.06
+wetness = 0.6
+
+[node name="BGM" type="Node" parent="." unique_id=1093464065]
+script = ExtResource("bgm")
+music_volume_db = -18.0
+
+[node name="Weather" type="Node3D" parent="." unique_id=1290084438 node_paths=PackedStringArray("camera", "dressing", "post_process", "terrain")]
+physics_interpolation_mode = 2
+script = ExtResource("weather")
+rain_intensity = 0.7
+rain_amount = 4800
+rain_volume_db = -10.0
+rain_audio_fade_time = 3.0
+wind_volume_db = -5.0
+wind_strength = 1.65
+lens_drop_rate = 1.0
+camera = NodePath("../Camera3D")
+dressing = NodePath("../World/GroundDressing")
+post_process = NodePath("../PostProcess/Screen")
+terrain = NodePath("../World/Ground")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=641407031]
+environment = SubResource("Environment_20")
+
+[node name="Moon" type="DirectionalLight3D" parent="." unique_id=181371217 groups=["shadow_lights"]]
+transform = Transform3D(0.8480479, 0.39380702, -0.35458514, 0, 0.669131, 0.7431448, 0.52991915, -0.6302229, 0.5674548, 0, 0, 0)
+light_color = Color(0.82, 0.87, 1, 1)
+light_energy = 0.7
+light_volumetric_fog_energy = 0.4
+light_angular_distance = 1.5
+light_cull_mask = 4294836223
+shadow_enabled = true
+shadow_blur = 1.5
+directional_shadow_max_distance = 45.0
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1477044112 node_paths=PackedStringArray("target")]
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 0, 8.456, 12.049)
+attributes = SubResource("CameraAttributes_follow")
+current = true
+fov = 30.0
+far = 150.0
+script = ExtResource("follow_camera")
+target = NodePath("../Player")
+distance = 11.0
+pitch_degrees = 10.0
+dead_zone = 0.1
+max_yaw_degrees = 180.0
+dof_mode = 0
+dof_far_transition = 4.0
+dof_near_transition = 1.5
+dof_amount = 0.02
+ellipse_radius = Vector2(0.25, 0.25)
+ellipse_transition = 0.9
+
+[node name="World" type="Node3D" parent="." unique_id=1610410805]
+
+[node name="Ground" type="Node3D" parent="World" unique_id=1787208604]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.02, 0)
+script = ExtResource("terrain_script")
+data = ExtResource("terrain_data")
+top_material = SubResource("Terrain_material")
+wall_material = SubResource("Cliff_material")
+water_material = SubResource("Water_material")
+waterfall_material = SubResource("Waterfall_material")
+bridge_material = SubResource("Bridge_material")
+
+[node name="GroundDressing" type="Node3D" parent="World" unique_id=741584959]
+script = ExtResource("ground_dressing")
+lighting_enabled = null
+stable_shadows = null
+normal_strength = null
+root_occlusion = null
+backlight_strength = null
+ground_relief = null
+ground_wet_response = null
+grass_density = 1.0
+flower_density = 1.55
+pebble_density = 0.42
+grass_variants = 31
+
+[node name="SpawnGrass" type="Node3D" parent="World/GroundDressing" unique_id=944090893]
+transform = Transform3D(3.510232, 0, 0, 0, 1, 0, 0, 0, 1, 16.354118, 0, 5.6)
+script = ExtResource("dressing_region")
+
+[node name="UpperGrass" type="Node3D" parent="World/GroundDressing" unique_id=1983167071]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, -5.6)
+script = ExtResource("dressing_region")
+area_size = Vector2(24, 9.6)
+
+[node name="Fireflies" type="GPUParticles3D" parent="World" unique_id=1919345414 groups=["fireflies"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.5, 1, 5.5)
+amount = 36
+lifetime = 7.0
+preprocess = 7.0
+visibility_aabb = AABB(-6, -2, -5, 12, 4, 10)
+process_material = SubResource("Firefly_process")
+draw_pass_1 = SubResource("Firefly_mesh")
+
+[node name="FirefliesEastLowland" type="GPUParticles3D" parent="World" unique_id=1814056625 groups=["fireflies"]]
+transform = Transform3D(1.5, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0.9, 5.5)
+amount = 48
+lifetime = 7.0
+preprocess = 7.0
+visibility_aabb = AABB(-8, -2, -5, 16, 4, 10)
+process_material = SubResource("Firefly_process")
+draw_pass_1 = SubResource("Firefly_mesh")
+
+[node name="FirefliesEastHighland" type="GPUParticles3D" parent="World" unique_id=1539322363 groups=["fireflies"]]
+transform = Transform3D(1.5, 0, 0, 0, 1, 0, 0, 0, 0.6, 27, 1.8, -7)
+amount = 36
+lifetime = 7.0
+preprocess = 7.0
+visibility_aabb = AABB(-8, -2, -4, 16, 4, 8)
+process_material = SubResource("Firefly_process")
+draw_pass_1 = SubResource("Firefly_mesh")
+
+[node name="WaterfallMist" type="FogVolume" parent="World" unique_id=2132748203]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.4, -0.05, -1.7)
+size = Vector3(2, 1.1, 1.8)
+material = SubResource("Mist_material")
+
+[node name="Lantern0" parent="World" unique_id=1890092194 instance=ExtResource("lantern_scene")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9, 0.02, -1)
+
+[node name="Lantern1" parent="World" unique_id=1858967865 instance=ExtResource("lantern_scene")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.9, 0.02, 1)
+azimuth = 90.0
+
+[node name="Lantern2" parent="World" unique_id=1957235759 instance=ExtResource("lantern_scene")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9, 0.82, -6)
+environment_style = 1
+light_color = Color(1, 0.86, 0.65, 1)
+direct_energy = 4.0
+fill_energy = 0.9
+light_range = 4.3
+cone_angle = 46.0
+edge_softness = 1.4
+tilt = 8.0
+specular_strength = 0.65
+water_energy = 1.3
+scattering = 7.0
+mist_density = 0.045
+mist_texture = 0.4
+ground_haze = 0.0
+mist_wind = Vector2(0.02, 0)
+beam_strength = 0.025
+emission_energy = 3.2
+halo_energy = 0.8
+halo_diameter = 0.9
+shadow_size = 0.015
+
+[node name="Lantern3" parent="World" unique_id=597320431 instance=ExtResource("lantern_scene")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.9, 0.82, -3.6)
+environment_style = 1
+light_color = Color(1, 0.86, 0.65, 1)
+direct_energy = 4.0
+fill_energy = 0.9
+light_range = 4.3
+cone_angle = 46.0
+edge_softness = 1.4
+tilt = 8.0
+azimuth = 90.0
+specular_strength = 0.65
+water_energy = 1.3
+scattering = 7.0
+mist_density = 0.045
+mist_texture = 0.4
+ground_haze = 0.0
+mist_wind = Vector2(0.02, 0)
+beam_strength = 0.025
+emission_energy = 3.2
+halo_energy = 0.8
+halo_diameter = 0.9
+shadow_size = 0.015
+
+[node name="City" type="Node3D" parent="World" unique_id=1819319796]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -5)
+
+[node name="Building0" type="MeshInstance3D" parent="World/City" unique_id=598726721]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 1.7, -2)
+material_override = SubResource("StandardMaterial3D_11")
+mesh = SubResource("BoxMesh_31")
+
+[node name="Body" type="StaticBody3D" parent="World/City/Building0" unique_id=335375681]
+
+[node name="Collision" type="CollisionShape3D" parent="World/City/Building0/Body" unique_id=268830267]
+shape = SubResource("BoxShape3D_32")
+
+[node name="Roof0" type="MeshInstance3D" parent="World/City" unique_id=2034977308]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 3.5, -2)
+material_override = SubResource("StandardMaterial3D_12")
+mesh = SubResource("BoxMesh_33")
+
+[node name="Window0_0_0" type="MeshInstance3D" parent="World/City" unique_id=899009574]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.25, 1.15, -0.73)
+material_override = SubResource("StandardMaterial3D_15")
+mesh = SubResource("BoxMesh_34")
+
+[node name="Window0_0_1" type="MeshInstance3D" parent="World/City" unique_id=1452057610]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.75, 1.15, -0.73)
+material_override = SubResource("StandardMaterial3D_15")
+mesh = SubResource("BoxMesh_34")
+
+[node name="Window0_1_0" type="MeshInstance3D" parent="World/City" unique_id=1802300237]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.25, 2.6, -0.73)
+material_override = SubResource("StandardMaterial3D_15")
+mesh = SubResource("BoxMesh_34")
+
+[node name="Window0_1_1" type="MeshInstance3D" parent="World/City" unique_id=577629648]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.75, 2.6, -0.73)
+material_override = SubResource("StandardMaterial3D_15")
+mesh = SubResource("BoxMesh_34")
+
+[node name="Door0" type="MeshInstance3D" parent="World/City" unique_id=780057797]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0.65, -0.71)
+material_override = SubResource("StandardMaterial3D_7")
+mesh = SubResource("BoxMesh_35")
+
+[node name="Building1" type="MeshInstance3D" parent="World/City" unique_id=1610675130]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2.25, -2.4)
+material_override = SubResource("StandardMaterial3D_11")
+mesh = SubResource("BoxMesh_36")
+
+[node name="Body" type="StaticBody3D" parent="World/City/Building1" unique_id=1012863497]
+
+[node name="Collision" type="CollisionShape3D" parent="World/City/Building1/Body" unique_id=875972332]
+shape = SubResource("BoxShape3D_37")
+
+[node name="Roof1" type="MeshInstance3D" parent="World/City" unique_id=1469985651]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 4.6, -2.4)
+material_override = SubResource("StandardMaterial3D_12")
+mesh = SubResource("BoxMesh_38")
+
+[node name="Window1_0_0" type="MeshInstance3D" parent="World/City" unique_id=1122075404]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 1.15, -1.03)
+material_override = SubResource("StandardMaterial3D_15")
+mesh = SubResource("BoxMesh_34")
+
+[node name="Window1_0_1" type="MeshInstance3D" parent="World/City" unique_id=338073803]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.75, 1.15, -1.03)
+material_override = SubResource("StandardMaterial3D_15")
+mesh = SubResource("BoxMesh_34")
+
+[node name="Window1_1_0" type="MeshInstance3D" parent="World/City" unique_id=1722595207]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 2.6, -1.03)
+material_override = SubResource("StandardMaterial3D_15")
+mesh = SubResource("BoxMesh_34")
+
+[node name="Window1_1_1" type="MeshInstance3D" parent="World/City" unique_id=1846243634]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.75, 2.6, -1.03)
+material_override = SubResource("StandardMaterial3D_15")
+mesh = SubResource("BoxMesh_34")
+
+[node name="Door1" type="MeshInstance3D" parent="World/City" unique_id=533802744]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.65, -1.01)
+material_override = SubResource("StandardMaterial3D_7")
+mesh = SubResource("BoxMesh_35")
+
+[node name="Lamppost0" type="MeshInstance3D" parent="World/City" unique_id=221168014]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.7, 1.25, 2.3)
+material_override = SubResource("StandardMaterial3D_1")
+mesh = SubResource("CylinderMesh_39")
+
+[node name="Lantern0" type="MeshInstance3D" parent="World/City" unique_id=355155980 groups=["street_emitters"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.7, 2.55, 2.3)
+material_override = SubResource("Street_lamp_material")
+cast_shadow = 0
+mesh = SubResource("BoxMesh_40")
+
+[node name="Halo" type="MeshInstance3D" parent="World/City/Lantern0" unique_id=1812571799 groups=["street_halos"]]
+cast_shadow = 0
+instance_shader_parameters/halo_color = Color(1, 0.84, 0.6, 1)
+mesh = SubResource("Halo_large")
+
+[node name="StreetLight0" type="OmniLight3D" parent="World/City" unique_id=1567638497 groups=["shadow_lights", "street_lights"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.7, 2.5, 2.3)
+light_color = Color(1, 0.84, 0.6, 1)
+light_energy = 0.45
+light_volumetric_fog_energy = 0.0
+light_specular = 0.85
+light_cull_mask = 4294836223
+shadow_enabled = true
+omni_range = 4.4
+
+[node name="Cone" type="SpotLight3D" parent="World/City/StreetLight0" unique_id=59644272 groups=["shadow_lights"]]
+transform = Transform3D(1, 0, 0, 0, -0.17364824, 0.98480797, 0, -0.98480797, -0.17364824, 0, -0.14, 0.18)
+light_color = Color(1, 0.84, 0.6, 1)
+light_energy = 3.6
+light_volumetric_fog_energy = 10.0
+light_size = 0.12
+light_specular = 0.85
+shadow_enabled = true
+shadow_normal_bias = 0.8
+spot_range = 4.0
+spot_angle = 40.0
+spot_angle_attenuation = 0.9
+
+[node name="Mist" type="FogVolume" parent="World/City/StreetLight0" unique_id=1376882540]
+transform = Transform3D(1, 0, 0, 0, 0.9848077, 0.17364818, 0, -0.17364818, 0.9848077, 0, -1.302073, 0.38490486)
+size = Vector3(3.4, 2.36, 3.4)
+material = SubResource("Lamp_fog")
+
+[node name="Dust" type="GPUParticles3D" parent="World/City/StreetLight0" unique_id=1170577319 groups=["street_light_dust"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.18, 0.18)
+cast_shadow = 0
+amount = 28
+lifetime = 12.0
+preprocess = 12.0
+randomness = 1.0
+visibility_aabb = AABB(-1.6, -1.3, -1.6, 3.2, 2.6, 3.2)
+process_material = SubResource("Dust_process")
+draw_pass_1 = SubResource("Dust_mesh")
+
+[node name="Beam" type="MeshInstance3D" parent="World/City/StreetLight0" unique_id=1457795763 groups=["light_beams"]]
+transform = Transform3D(1, 0, 0, 0, 0.9848077, 0.17364818, 0, -0.17364818, 0.9848077, 0, -1.302073, 0.38490486)
+layers = 131072
+cast_shadow = 0
+gi_mode = 0
+instance_shader_parameters/lamp_position = Vector3(-9.7, 2.36, -2.52)
+mesh = SubResource("Beam_mesh")
+
+[node name="Lamppost1" type="MeshInstance3D" parent="World/City" unique_id=157701689]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.6, 1.25, 2.3)
+material_override = SubResource("StandardMaterial3D_1")
+mesh = SubResource("CylinderMesh_39")
+
+[node name="Lantern1" type="MeshInstance3D" parent="World/City" unique_id=802550915 groups=["street_emitters"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.6, 2.55, 2.3)
+material_override = SubResource("Street_lamp_material")
+cast_shadow = 0
+mesh = SubResource("BoxMesh_40")
+
+[node name="Halo" type="MeshInstance3D" parent="World/City/Lantern1" unique_id=1684164983 groups=["street_halos"]]
+cast_shadow = 0
+instance_shader_parameters/halo_color = Color(1, 0.84, 0.6, 1)
+mesh = SubResource("Halo_large")
+
+[node name="StreetLight1" type="OmniLight3D" parent="World/City" unique_id=644285062 groups=["shadow_lights", "street_lights"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.6, 2.5, 2.3)
+light_color = Color(1, 0.84, 0.6, 1)
+light_energy = 0.45
+light_volumetric_fog_energy = 0.0
+light_specular = 0.85
+light_cull_mask = 4294836223
+shadow_enabled = true
+omni_range = 4.4
+
+[node name="Cone" type="SpotLight3D" parent="World/City/StreetLight1" unique_id=1441854417 groups=["shadow_lights"]]
+transform = Transform3D(1, 0, 0, 0, -0.17364824, 0.98480797, 0, -0.98480797, -0.17364824, 0, -0.14, 0.18)
+light_color = Color(1, 0.84, 0.6, 1)
+light_energy = 3.6
+light_volumetric_fog_energy = 10.0
+light_size = 0.12
+light_specular = 0.85
+shadow_enabled = true
+shadow_normal_bias = 0.8
+spot_range = 4.0
+spot_angle = 40.0
+spot_angle_attenuation = 0.9
+
+[node name="Mist" type="FogVolume" parent="World/City/StreetLight1" unique_id=1253888853]
+transform = Transform3D(1, 0, 0, 0, 0.9848077, 0.17364818, 0, -0.17364818, 0.9848077, 0, -1.302073, 0.38490486)
+size = Vector3(3.4, 2.36, 3.4)
+material = SubResource("Lamp_fog")
+
+[node name="Dust" type="GPUParticles3D" parent="World/City/StreetLight1" unique_id=252650731 groups=["street_light_dust"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.18, 0.18)
+cast_shadow = 0
+amount = 28
+lifetime = 12.0
+preprocess = 12.0
+randomness = 1.0
+visibility_aabb = AABB(-1.6, -1.3, -1.6, 3.2, 2.6, 3.2)
+process_material = SubResource("Dust_process")
+draw_pass_1 = SubResource("Dust_mesh")
+
+[node name="Beam" type="MeshInstance3D" parent="World/City/StreetLight1" unique_id=144097034 groups=["light_beams"]]
+transform = Transform3D(1, 0, 0, 0, 0.9848077, 0.17364818, 0, -0.17364818, 0.9848077, 0, -1.302073, 0.38490486)
+layers = 131072
+cast_shadow = 0
+gi_mode = 0
+instance_shader_parameters/lamp_position = Vector3(-2.4, 2.36, -2.52)
+mesh = SubResource("Beam_mesh")
+
+[node name="NPC0" type="Sprite3D" parent="World/City" unique_id=22306499]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3, 0.79, 3.5)
+pixel_size = 0.0234375
+billboard = 2
+shaded = true
+alpha_cut = 1
+texture_filter = 0
+texture = ExtResource("tex_17")
+
+[node name="NPC1" type="Sprite3D" parent="World/City" unique_id=118729899]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9, 0.79, 3.5)
+pixel_size = 0.0234375
+billboard = 2
+shaded = true
+alpha_cut = 1
+texture_filter = 0
+texture = ExtResource("tex_18")
+
+[node name="Cyber" type="Node3D" parent="World" unique_id=1420361444]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -5)
+
+[node name="Tower0" type="MeshInstance3D" parent="World/Cyber" unique_id=1779861030]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.8, 2.3, -2.3)
+material_override = SubResource("StandardMaterial3D_13")
+mesh = SubResource("BoxMesh_41")
+
+[node name="Body" type="StaticBody3D" parent="World/Cyber/Tower0" unique_id=155238233]
+
+[node name="Collision" type="CollisionShape3D" parent="World/Cyber/Tower0/Body" unique_id=604421427]
+shape = SubResource("BoxShape3D_42")
+
+[node name="Strip0_0" type="MeshInstance3D" parent="World/Cyber" unique_id=1912075879]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.8, 3.8, -1.17)
+material_override = SubResource("StandardMaterial3D_16")
+mesh = SubResource("BoxMesh_43")
+
+[node name="Strip0_1" type="MeshInstance3D" parent="World/Cyber" unique_id=1539279754]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.8, 2.85, -1.17)
+material_override = SubResource("StandardMaterial3D_16")
+mesh = SubResource("BoxMesh_43")
+
+[node name="Strip0_2" type="MeshInstance3D" parent="World/Cyber" unique_id=785040884]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.8, 1.9, -1.17)
+material_override = SubResource("StandardMaterial3D_16")
+mesh = SubResource("BoxMesh_43")
+
+[node name="Edge0" type="MeshInstance3D" parent="World/Cyber" unique_id=699004446]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.92, 2.25, -1.17)
+material_override = SubResource("StandardMaterial3D_17")
+mesh = SubResource("BoxMesh_44")
+
+[node name="Tower1" type="MeshInstance3D" parent="World/Cyber" unique_id=868624449]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4, 2.9, -2.8)
+material_override = SubResource("StandardMaterial3D_13")
+mesh = SubResource("BoxMesh_45")
+
+[node name="Body" type="StaticBody3D" parent="World/Cyber/Tower1" unique_id=561349066]
+
+[node name="Collision" type="CollisionShape3D" parent="World/Cyber/Tower1/Body" unique_id=1780760320]
+shape = SubResource("BoxShape3D_46")
+
+[node name="Strip1_0" type="MeshInstance3D" parent="World/Cyber" unique_id=385232556]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4, 5, -1.67)
+material_override = SubResource("StandardMaterial3D_17")
+mesh = SubResource("BoxMesh_43")
+
+[node name="Strip1_1" type="MeshInstance3D" parent="World/Cyber" unique_id=1779485729]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4, 4.05, -1.67)
+material_override = SubResource("StandardMaterial3D_17")
+mesh = SubResource("BoxMesh_43")
+
+[node name="Strip1_2" type="MeshInstance3D" parent="World/Cyber" unique_id=1017868787]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4, 3.1, -1.67)
+material_override = SubResource("StandardMaterial3D_17")
+mesh = SubResource("BoxMesh_43")
+
+[node name="Edge1" type="MeshInstance3D" parent="World/Cyber" unique_id=2001364944]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.72, 2.85, -1.67)
+material_override = SubResource("StandardMaterial3D_17")
+mesh = SubResource("BoxMesh_47")
+
+[node name="Tower2" type="MeshInstance3D" parent="World/Cyber" unique_id=67545927]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.3, 1.85, -1.7)
+material_override = SubResource("StandardMaterial3D_13")
+mesh = SubResource("BoxMesh_48")
+
+[node name="Body" type="StaticBody3D" parent="World/Cyber/Tower2" unique_id=155127317]
+
+[node name="Collision" type="CollisionShape3D" parent="World/Cyber/Tower2/Body" unique_id=379860872]
+shape = SubResource("BoxShape3D_49")
+
+[node name="Strip2_0" type="MeshInstance3D" parent="World/Cyber" unique_id=800871602]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.3, 2.9, -0.57)
+material_override = SubResource("StandardMaterial3D_16")
+mesh = SubResource("BoxMesh_43")
+
+[node name="Strip2_1" type="MeshInstance3D" parent="World/Cyber" unique_id=410538773]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.3, 1.95, -0.57)
+material_override = SubResource("StandardMaterial3D_16")
+mesh = SubResource("BoxMesh_43")
+
+[node name="Strip2_2" type="MeshInstance3D" parent="World/Cyber" unique_id=1064858498]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.3, 1, -0.57)
+material_override = SubResource("StandardMaterial3D_16")
+mesh = SubResource("BoxMesh_43")
+
+[node name="Edge2" type="MeshInstance3D" parent="World/Cyber" unique_id=1086819951]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.18, 1.8, -0.57)
+material_override = SubResource("StandardMaterial3D_17")
+mesh = SubResource("BoxMesh_50")
+
+[node name="CyanWash" type="OmniLight3D" parent="World/Cyber" unique_id=1326004948 groups=["shadow_lights"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2, 1)
+light_color = Color(0.28627, 0.86275, 0.90588, 1)
+light_energy = 3.0
+light_volumetric_fog_energy = 0.6
+light_cull_mask = 4294836223
+shadow_enabled = true
+omni_range = 7.0
+
+[node name="MagentaWash" type="OmniLight3D" parent="World/Cyber" unique_id=1409625203 groups=["shadow_lights"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 2, 2)
+light_color = Color(0.8902, 0.2902, 0.68627, 1)
+light_energy = 3.0
+light_volumetric_fog_energy = 0.6
+light_cull_mask = 4294836223
+shadow_enabled = true
+omni_range = 7.0
+
+[node name="NPC0" type="Sprite3D" parent="World/Cyber" unique_id=110009749]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3, 0.79, 3.5)
+pixel_size = 0.0234375
+billboard = 2
+shaded = true
+alpha_cut = 1
+texture_filter = 0
+texture = ExtResource("tex_19")
+
+[node name="NPC1" type="Sprite3D" parent="World/Cyber" unique_id=168550539]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9, 0.79, 3.5)
+pixel_size = 0.0234375
+billboard = 2
+shaded = true
+alpha_cut = 1
+texture_filter = 0
+texture = ExtResource("tex_20")
+
+[node name="Cultivation" type="Node3D" parent="World" unique_id=1307573982]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 5)
+
+[node name="TempleBase" type="MeshInstance3D" parent="World/Cultivation" unique_id=1826308902]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 0.3, -1.8)
+material_override = SubResource("StandardMaterial3D_14")
+mesh = SubResource("BoxMesh_52")
+
+[node name="Body" type="StaticBody3D" parent="World/Cultivation/TempleBase" unique_id=588906079]
+
+[node name="Collision" type="CollisionShape3D" parent="World/Cultivation/TempleBase/Body" unique_id=1107112908]
+shape = SubResource("BoxShape3D_53")
+
+[node name="Step1" type="MeshInstance3D" parent="World/Cultivation" unique_id=871179643]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 0.12, 0.7)
+material_override = SubResource("StandardMaterial3D_14")
+mesh = SubResource("BoxMesh_54")
+
+[node name="Step2" type="MeshInstance3D" parent="World/Cultivation" unique_id=2102869114]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 0.3, 0.25)
+material_override = SubResource("StandardMaterial3D_14")
+mesh = SubResource("BoxMesh_55")
+
+[node name="Pillar0" type="MeshInstance3D" parent="World/Cultivation" unique_id=1059853988]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 1.75, -3)
+material_override = SubResource("StandardMaterial3D_7")
+mesh = SubResource("CylinderMesh_56")
+
+[node name="Pillar1" type="MeshInstance3D" parent="World/Cultivation" unique_id=139221266]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4, 1.75, -3)
+material_override = SubResource("StandardMaterial3D_7")
+mesh = SubResource("CylinderMesh_56")
+
+[node name="Pillar2" type="MeshInstance3D" parent="World/Cultivation" unique_id=1539435362]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 1.75, -0.6)
+material_override = SubResource("StandardMaterial3D_7")
+mesh = SubResource("CylinderMesh_56")
+
+[node name="Pillar3" type="MeshInstance3D" parent="World/Cultivation" unique_id=1840523511]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4, 1.75, -0.6)
+material_override = SubResource("StandardMaterial3D_7")
+mesh = SubResource("CylinderMesh_56")
+
+[node name="RoofEaves" type="MeshInstance3D" parent="World/Cultivation" unique_id=449299743]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 3, -1.8)
+material_override = SubResource("StandardMaterial3D_8")
+mesh = SubResource("BoxMesh_57")
+
+[node name="TempleRoof" type="MeshInstance3D" parent="World/Cultivation" unique_id=1696926300]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 3.5, -1.8)
+material_override = SubResource("StandardMaterial3D_8")
+mesh = SubResource("PrismMesh_58")
+
+[node name="RedLantern0" type="MeshInstance3D" parent="World/Cultivation" unique_id=185708241]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 2.35, 0.15)
+material_override = SubResource("StandardMaterial3D_15")
+mesh = SubResource("CylinderMesh_59")
+
+[node name="Halo" type="MeshInstance3D" parent="World/Cultivation/RedLantern0" unique_id=1031537320]
+cast_shadow = 0
+instance_shader_parameters/halo_color = Color(1, 0.35, 0.22, 1)
+mesh = SubResource("Halo_small")
+
+[node name="LanternLight0" type="OmniLight3D" parent="World/Cultivation" unique_id=392899347 groups=["shadow_lights"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 2.25, 0.25)
+light_color = Color(1, 0.78039, 0.4902, 1)
+light_energy = 1.6
+light_volumetric_fog_energy = 0.6
+light_cull_mask = 4294836223
+shadow_enabled = true
+
+[node name="RedLantern1" type="MeshInstance3D" parent="World/Cultivation" unique_id=1686586244]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4, 2.35, 0.15)
+material_override = SubResource("StandardMaterial3D_15")
+mesh = SubResource("CylinderMesh_59")
+
+[node name="Halo" type="MeshInstance3D" parent="World/Cultivation/RedLantern1" unique_id=1329407791]
+cast_shadow = 0
+instance_shader_parameters/halo_color = Color(1, 0.35, 0.22, 1)
+mesh = SubResource("Halo_small")
+
+[node name="LanternLight1" type="OmniLight3D" parent="World/Cultivation" unique_id=848174202 groups=["shadow_lights"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4, 2.25, 0.25)
+light_color = Color(1, 0.78039, 0.4902, 1)
+light_energy = 1.6
+light_volumetric_fog_energy = 0.6
+light_cull_mask = 4294836223
+shadow_enabled = true
+
+[node name="SpiritLight" type="OmniLight3D" parent="World/Cultivation" unique_id=434774321 groups=["shadow_lights"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 1.4, 1.5)
+light_color = Color(0.39216, 0.91765, 0.72157, 1)
+light_energy = 3.0
+light_volumetric_fog_energy = 0.6
+light_cull_mask = 4294836223
+shadow_enabled = true
+omni_range = 6.0
+
+[node name="NPC0" type="Sprite3D" parent="World/Cultivation" unique_id=942180181]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3, 0.79, 3.5)
+pixel_size = 0.0234375
+billboard = 2
+shaded = true
+alpha_cut = 1
+texture_filter = 0
+texture = ExtResource("tex_21")
+
+[node name="NPC1" type="Sprite3D" parent="World/Cultivation" unique_id=63030201]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.79814, 0.79, 3.5)
+pixel_size = 0.0234375
+billboard = 2
+shaded = true
+alpha_cut = 1
+texture_filter = 0
+texture = ExtResource("tex_22")
+
+[node name="Wilderness" type="Node3D" parent="World" unique_id=1434636570]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 5)
+
+[node name="ForestGlade" type="OmniLight3D" parent="World/Wilderness" unique_id=941209930 groups=["shadow_lights"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 1)
+light_color = Color(0.5451, 0.74118, 0.63529, 1)
+light_energy = 1.8
+light_volumetric_fog_energy = 0.6
+light_cull_mask = 4294836223
+shadow_enabled = true
+omni_range = 7.0
+
+[node name="NPC0" type="Sprite3D" parent="World/Wilderness" unique_id=49645557]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3, 0.79, 3.5)
+pixel_size = 0.0234375
+billboard = 2
+shaded = true
+alpha_cut = 1
+texture_filter = 0
+texture = ExtResource("tex_23")
+
+[node name="NPC1" type="Sprite3D" parent="World/Wilderness" unique_id=327181849]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9, 0.79, 3.5)
+pixel_size = 0.0234375
+billboard = 2
+shaded = true
+alpha_cut = 1
+texture_filter = 0
+texture = ExtResource("tex_24")
+
+[node name="Player" type="CharacterBody3D" parent="." unique_id=1426912114 node_paths=PackedStringArray("movement_camera")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 1.4)
+script = ExtResource("player")
+animations = ExtResource("player_frames")
+movement_camera = NodePath("../Camera3D")
+
+[node name="Collision" type="CollisionShape3D" parent="Player" unique_id=1536128845]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.532959, 0)
+shape = SubResource("CapsuleShape3D_66")
+
+[node name="Sprite" type="Sprite3D" parent="Player" unique_id=916617438]
+script = ExtResource("character_lighting")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75, 0)
+pixel_size = 0.0234375
+billboard = 2
+shaded = true
+alpha_cut = 1
+texture_filter = 0
+texture = ExtResource("tex_17")
+
+[node name="PostProcess" type="CanvasLayer" parent="." unique_id=2033645574]
+layer = 0
+
+[node name="Screen" type="ColorRect" parent="PostProcess" unique_id=259522869]
+material = SubResource("Post_material")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=863402359]
+visible = false
+
+[node name="Panel" type="PanelContainer" parent="HUD" unique_id=715598675]
+offset_left = 24.0
+offset_top = 24.0
+offset_right = 500.0
+theme = SubResource("Theme_22")
+theme_override_styles/panel = SubResource("StyleBoxFlat_23")
+
+[node name="Margin" type="MarginContainer" parent="HUD/Panel" unique_id=2011692078]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 16
+
+[node name="Column" type="VBoxContainer" parent="HUD/Panel/Margin" unique_id=1754690683]
+layout_mode = 2
+theme_override_constants/separation = 9
+
+[node name="Title" type="Label" parent="HUD/Panel/Margin/Column" unique_id=1634974773]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "四境 / HD-2D"
+
+[node name="Subtitle" type="Label" parent="HUD/Panel/Margin/Column" unique_id=1149361536]
+modulate = Color(0.65, 0.78, 0.82, 1)
+layout_mode = 2
+text = "同一世界里的城市、霓虹、修仙与野外"
+
+[node name="Effects" type="HBoxContainer" parent="HUD/Panel/Margin/Column" unique_id=829168863]
+layout_mode = 2
+
+[node name="Glow" type="CheckButton" parent="HUD/Panel/Margin/Column/Effects" unique_id=260043308]
+layout_mode = 2
+focus_mode = 0
+button_pressed = true
+text = "泛光 G"
+
+[node name="Shadows" type="CheckButton" parent="HUD/Panel/Margin/Column/Effects" unique_id=221839891]
+layout_mode = 2
+focus_mode = 0
+button_pressed = true
+text = "阴影 H"
+
+[node name="Fog" type="CheckButton" parent="HUD/Panel/Margin/Column/Effects" unique_id=1535374870]
+layout_mode = 2
+focus_mode = 0
+button_pressed = true
+text = "雾效 F"
+
+[node name="Status" type="Label" parent="HUD/Panel/Margin/Column" unique_id=1916374498]
+modulate = Color(0.8, 0.88, 0.8, 1)
+layout_mode = 2
+theme_override_font_sizes/font_size = 14
+
+[node name="Footer" type="Label" parent="HUD" unique_id=472795390]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 24.0
+offset_top = -43.0
+offset_bottom = -16.0
+theme = SubResource("Theme_22")
+text = "WASD / 方向键随相机移动 · Q/E 水平旋转 · G 泛光 · H 阴影 · F 雾效 · L 光照 · R 水面反射"
+
+[node name="WaterReflection" type="Node3D" parent="." unique_id=408362384 node_paths=PackedStringArray("terrain", "source_camera", "world_environment")]
+script = ExtResource("water_reflection")
+terrain = NodePath("../World/Ground")
+source_camera = NodePath("../Camera3D")
+world_environment = NodePath("../WorldEnvironment")

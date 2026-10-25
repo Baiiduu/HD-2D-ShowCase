@@ -1,0 +1,47 @@
+{
+  "job_id": "job_858f7983347346b498e4a9ca90457ebf",
+  "source_file": "D:\\Project\\HD-2DMap\\demoWithMeowa\\1\\assets\\meowa\\weather\\rain_source.mp3",
+  "source_sha256": "7af119d58eb5ce28f84207402c6d4bdbfa01e4ae63304c6966e174eeb33433c0",
+  "derived_file": "D:\\Project\\HD-2DMap\\demoWithMeowa\\1\\assets\\meowa\\weather\\rain.wav",
+  "derived_sha256": "130d289f70aa888c4b2d12a999d7152deddd5ca1f1f783cf3706cf0d9e6e8cd7",
+  "duration_seconds": 10,
+  "sample_rate": 48000,
+  "channels": 2,
+  "format": "16-bit PCM WAV",
+  "processing": {
+    "lowpass_hz": 4500,
+    "filter_order": 2,
+    "zero_phase": true,
+    "envelope_ms": 20,
+    "compression_ratio": 6,
+    "threshold_percentile": 60,
+    "target_rms_before_soft_limit_dbfs": -32,
+    "soft_limit_ceiling_dbfs": -18,
+    "loop_overlap_ms": 120,
+    "length_restore_resample_ratio": "250/247",
+    "uses_generated_source_only": true
+  },
+  "peak_dbfs": -17.74469840944718,
+  "rms_dbfs": -32.467183041616856,
+  "20ms_rms_dbfs_min_median_max": [
+    -35.843912256403016,
+    -32.62317075794853,
+    -28.666045537603516
+  ],
+  "clipped_samples": 0,
+  "nearly_silent_20ms_windows": 0,
+  "loop_boundary_max_step_dbfs": -47.18194092139648,
+  "step_99_9th_percentile_dbfs": -23.865703339675,
+  "previous_source_file": "D:\\Project\\HD-2DMap\\demoWithMeowa\\1\\assets\\meowa\\weather\\rain.mp3",
+  "preview_file": "D:\\Project\\HD-2DMap\\docs\\weather-preview\\rain-soft.wav",
+  "playback": {
+    "rain_volume_db": -8,
+    "rain_intensity": 0.7,
+    "effective_player_volume_db": -9.549019599857433,
+    "fade_seconds": 5,
+    "captured_preview_peak_dbfs": -26.644238022394248,
+    "captured_preview_rms_dbfs": -42.022809296183254,
+    "captured_preview_clip_samples": 0,
+    "preview_sha256": "397e3333fca406b55e363a25b1ed91b3a779329336327638b1ab1d50cf396bb3"
+  }
+}

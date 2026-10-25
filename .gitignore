@@ -1,0 +1,12 @@
+# Generated Godot editor/import caches
+.godot/
+
+# JavaScript dependencies and build output
+node_modules/
+dist/
+
+# Local credentials
+.env
+.env.*
+!.env.example
+!.env.sample

@@ -1,0 +1,48 @@
+{
+  "music_job": "job_7a4d36f7c937404390a98b8cf6e0c66a",
+  "wind_job": "job_cdbef3bc76d845659de419c4bdf415ab",
+  "preserved_first_music_job": "job_261574c790b84e9793fef6c6059e7972",
+  "music_source": "D:\\Project\\HD-2DMap\\demoWithMeowa\\1\\assets\\meowa\\audio\\bgm.mp3",
+  "music_sha256": "8e2da8a3755855e35ee62cde79abf581f85279edfe0d3e459119265e6bad734b",
+  "music_measured_length_seconds": 179.644088745117,
+  "music_source_analysis": {
+    "peak_dbfs": -0.01772044211302002,
+    "rms_dbfs": -14.268635071324429,
+    "clipped_samples": 0,
+    "nearly_silent_20ms_windows": 3,
+    "rms_20ms_min_dbfs": -240.0
+  },
+  "game_mix_analysis": {
+    "peak_dbfs": -18.882516973691462,
+    "rms_dbfs": -36.63871051831688,
+    "clipped_samples": 0,
+    "nearly_silent_20ms_windows": 0,
+    "rms_20ms_min_dbfs": -42.451386488330584
+  },
+  "loop_crossfade_analysis": {
+    "peak_dbfs": -22.456441983438246,
+    "rms_dbfs": -38.90211443700513,
+    "clipped_samples": 0,
+    "nearly_silent_20ms_windows": 0,
+    "rms_20ms_min_dbfs": -42.80364142935915
+  },
+  "native_integration": {
+    "configured_music_db": -20,
+    "configured_wind_db": -16.0,
+    "crossfade_seconds": 6.0,
+    "failures": [],
+    "music_length_seconds": 179.644088745117,
+    "original_wind_player_db": -18.1585845947266,
+    "rate": 48000.0,
+    "wind_length_seconds": 10.0
+  },
+  "editor_validation": {
+    "audio_players_created": 0,
+    "editor_hint": true
+  },
+  "previews": {
+    "game_mix": "D:\\Project\\HD-2DMap\\docs\\audio-preview\\soundscape.wav",
+    "bgm_at_game_volume": "D:\\Project\\HD-2DMap\\docs\\audio-preview\\bgm.wav",
+    "loop_crossfade": "D:\\Project\\HD-2DMap\\docs\\audio-preview\\music-loop.wav"
+  }
+}

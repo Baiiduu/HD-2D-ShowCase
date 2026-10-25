@@ -1,0 +1,71 @@
+{
+  "texture_size": 64,
+  "dimensions": "64x64",
+  "count": 4,
+  "matches": [
+    {
+      "reference_id": "texture-4b11140f45b14a6c",
+      "name": "dirt_1024",
+      "category": "terrain",
+      "dimensions": "64x64",
+      "name_en": "dirt_1024",
+      "name_zh": "像素风格泥土纹理",
+      "category_zh": "自然地表",
+      "color_tags": [
+        "brown"
+      ],
+      "color_tags_zh": [
+        "棕色"
+      ]
+    },
+    {
+      "reference_id": "texture-666d199d8e596a36",
+      "name": "minimal_mossy_stone",
+      "category": "terrain",
+      "dimensions": "64x64",
+      "name_en": "minimal_mossy_stone",
+      "name_zh": "像素风苔藓石板纹理",
+      "category_zh": "自然地表",
+      "color_tags": [
+        "gray",
+        "green"
+      ],
+      "color_tags_zh": [
+        "灰色",
+        "绿色"
+      ]
+    },
+    {
+      "reference_id": "texture-f704a946c9c800f3",
+      "name": "floor_lab_metal_panel",
+      "category": "road_floor",
+      "dimensions": "64x64",
+      "name_en": "floor_lab_metal_panel",
+      "name_zh": "灰色金属方块像素纹理",
+      "category_zh": "道路/地板",
+      "color_tags": [
+        "gray",
+        "gold"
+      ],
+      "color_tags_zh": [
+        "灰色",
+        "金色"
+      ]
+    },
+    {
+      "reference_id": "texture-6952d315211fe476",
+      "name": "road_cobblestone",
+      "category": "road_floor",
+      "dimensions": "64x64",
+      "name_en": "road_cobblestone",
+      "name_zh": "像素风格鹅卵石路面",
+      "category_zh": "道路/地板",
+      "color_tags": [
+        "gray"
+      ],
+      "color_tags_zh": [
+        "灰色"
+      ]
+    }
+  ]
+}

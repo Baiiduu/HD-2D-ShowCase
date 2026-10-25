@@ -1,0 +1,31 @@
+表层（C 城市 / Y 赛博 / X 修仙 / G 野外草地 / R 道路 / D 泥土 / ~ 水 / B 桥 / ^ 坡道）
+     x: -7 -6 -5 -4 -3 -2 -1  0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22
+z= -6    C  C  C  C  C  C  C  R  Y  Y  Y  Y  Y  Y  Y  G  G  G  G  G  G  ~  G  G  G  G  G  G  G  G
+z= -5    C  C  C  C  C  C  C  R  Y  Y  Y  Y  Y  Y  Y  G  G  G  G  G  G  ~  G  G  G  D  G  G  G  G
+z= -4    C  C  C  C  C  C  C  R  Y  Y  Y  Y  Y  Y  Y  G  G  G  G  G  G  ~  G  G  G  D  G  G  G  G
+z= -3    C  C  C  C  C  C  C  R  Y  Y  Y  Y  Y  Y  Y  G  G  D  D  D  D  B  D  D  D  ^  G  G  G  G
+z= -2    C  C  C  C  C  C  C  R  Y  Y  Y  Y  Y  Y  Y  G  G  D  G  G  G  ~  G  G  G  G  G  G  G  G
+z= -1    C  C  C  C  C  C  C  R  Y  Y  Y  Y  Y  Y  Y  G  G  ^  G  G  G  ~  G  G  G  G  G  G  G  G
+z=  0    R  R  R  R  R  R  R  R  R  R  R  R  R  R  R  R  R  R  R  R  R  B  R  R  R  R  R  R  R  R
+z=  1    X  X  X  X  X  X  X  R  G  G  D  G  G  G  G  G  G  G  G  G  G  ~  G  G  G  G  G  G  G  G
+z=  2    X  X  X  X  X  X  X  R  G  G  D  G  G  G  G  G  G  G  G  G  G  ~  G  G  G  G  G  G  G  G
+z=  3    X  X  X  X  X  X  X  R  G  G  D  G  G  G  G  G  G  G  G  G  G  ~  ~  G  G  G  G  G  G  G
+z=  4    X  X  X  X  X  X  X  R  G  G  G  D  D  G  G  G  G  G  G  G  G  G  ~  G  G  G  G  G  G  G
+z=  5    X  X  X  X  X  X  X  R  G  G  G  D  G  G  G  G  G  G  G  G  G  G  ~  G  G  G  G  G  G  G
+z=  6    X  X  X  X  X  X  X  R  G  G  G  D  G  G  G  G  G  G  G  G  G  G  ~  G  G  G  G  G  G  G
+
+高度层级（每层 0.8 m；水格为河床层级）
+     x: -7 -6 -5 -4 -3 -2 -1  0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22
+z= -6    0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1  1  1  1  1  0  1  1  2  2  2  2  2  1
+z= -5    0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1  1  1  1  1  0  1  1  2  2  2  2  2  1
+z= -4    0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1  1  1  1  1  0  1  1  2  2  2  2  2  1
+z= -3    0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1  1  1  1  1  0  1  1  1  1  1  1  1  1
+z= -2    0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1  1  1  1  1  0  1  1  1  1  1  1  1  1
+z= -1    0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 -1  0  0  0  0  0  0  0  0
+z=  0    0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 -1  0  0  0  0  0  0  0  0
+z=  1    0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 -1  0  0  0  0  0  0  0  0
+z=  2    0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 -1  0  0  0  0  0  0  0  0
+z=  3    0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 -1 -1  0  0  0  0  0  0  0
+z=  4    0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 -1  0  0  0  0  0  0  0
+z=  5    0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 -1  0  0  0  0  0  0  0
+z=  6    0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 -1  0  0  0  0  0  0  0

@@ -1,0 +1,22 @@
+{
+  "texture_size": 64,
+  "dimensions": "64x64",
+  "count": 1,
+  "matches": [
+    {
+      "reference_id": "texture-75e33597e6f6d2fc",
+      "name": "grass_mossy",
+      "category": "terrain",
+      "dimensions": "64x64",
+      "name_en": "grass_mossy",
+      "name_zh": "带苔藓的草地纹理",
+      "category_zh": "自然地表",
+      "color_tags": [
+        "green"
+      ],
+      "color_tags_zh": [
+        "绿色"
+      ]
+    }
+  ]
+}
