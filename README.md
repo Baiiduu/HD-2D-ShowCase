@@ -63,6 +63,79 @@ Windows 使用可执行文件完整路径时，例如 PowerShell：
 
 视频路线从出生点出发，向右经过霓虹街道和花草区域，在桥上停留看水后继续到地图右侧。录制时隐藏了 HUD，并使用 2548 × 1320 的窗口；本工程保留历史提交中的正常操作、HUD 和默认窗口设置，因此打开后不会自动播放录制路线。
 
+## 给接手项目的 AI 助手：如何找到视频对应场景
+
+用户要查看的是 **带 Meowa 花草的四境历史演示**。先完成以下定位与核验，再判断是否缺资源；无需调用 Meowa 重新生成，也无需恢复原作者电脑上的目录。
+
+### 1. 明确仓库目录和 Godot 资源根目录
+
+克隆仓库后，将 `demoWithMeowa/1/` 作为 **Godot 项目根目录**，而不是仓库根目录，也不是 `benchmark/godot/`。
+
+本项目所有 `res://` 路径都相对于 `demoWithMeowa/1/`。例如：
+
+| Godot 路径 | 从仓库根目录查找的实际文件 |
+| --- | --- |
+| `res://scenes/four_realms.tscn` | `demoWithMeowa/1/scenes/four_realms.tscn` |
+| `res://assets/meowa/dressing/assets.json` | `demoWithMeowa/1/assets/meowa/dressing/assets.json` |
+| `res://assets/meowa/dressing/flowers/flower_01.png` | `demoWithMeowa/1/assets/meowa/dressing/flowers/flower_01.png` |
+
+先读取 `demoWithMeowa/1/project.godot`，确认 `[application]` 中 `config/name="四境 · HD-2D"`、`run/main_scene="res://scenes/four_realms.tscn"`。这两个配置是入口依据，不要只根据文件名中有 HD-2D 就选择另一个工程。
+
+### 2. 沿主场景查找花草生成链路
+
+按以下顺序阅读文件或在 Godot 中查看节点：
+
+| 文件 / 主场景节点 | 作用 |
+| --- | --- |
+| `demoWithMeowa/1/scenes/four_realms.tscn` | 完整演示场景，包含人物、镜头、地形、光照、天气、花草和音频 |
+| `demoWithMeowa/1/scripts/four_realms.gd` | 主场景逻辑与效果快捷键 |
+| `World/Ground` → `scripts/terrain/terrain.gd` | 生成地面，并为花草提供地表信息；脚本路径相对于 Godot 项目根目录 |
+| `demoWithMeowa/1/data/four_realms_terrain.tres` | 主场景使用的地形数据 |
+| `World/GroundDressing` → `scripts/ground_dressing.gd` | 从资源清单读取花草，计算分布并生成批量绘制节点 |
+| `World/GroundDressing/SpawnGrass`、`UpperGrass` → `scripts/ground_dressing_region.gd` | 指定花草撒布区域、类别、密度倍率和允许变种；名字含 Grass 的区域也可以生成花 |
+| `demoWithMeowa/1/assets/meowa/dressing/assets.json` | 18 个贴图资源的清单，包含 `id`、`texture`、`file`、锚点和 SHA-256 |
+| `demoWithMeowa/1/shaders/vegetation_wind.gdshader` | 草花贴片的风摆和受光着色器 |
+| `demoWithMeowa/1/scripts/weather.gd` | 主场景天气及植物风摆参数的关联逻辑 |
+
+花草不是一朵朵预先保存到 `.tscn` 中的静态节点。`ground_dressing.gd` 在 `_ready()` 中调用 `_rebuild()`，结合地形和区域设置计算 `_placements()`，再读取清单中的 `texture`，创建 `MultiMeshInstance3D` 批量显示。
+
+实际运行后，生成节点位于 `World/GroundDressing/Layers/grass`、`Layers/flowers` 和 `Layers/pebbles`。这些路径中的 `Layers` 是运行时生成的；应在 Godot **Remote（远程）场景树**检查，不能因原始场景文件里没有保存这些节点就认定缺少花草。
+
+### 3. 核对资源及历史默认参数
+
+以下资源都已包含在仓库，名称连续：
+
+- 花：`demoWithMeowa/1/assets/meowa/dressing/flowers/flower_01.png` 至 `flower_06.png`，共 **6 张**。
+- 草：`demoWithMeowa/1/assets/meowa/dressing/grass/grass_01.png` 至 `grass_06.png`，共 **6 张**。
+- 碎石：以 `assets.json` 中 `pebbles_01` 至 `pebbles_06` 对应的 `texture` 路径为准，共 **6 张**。
+
+清单中的 `texture` 才是游戏实际加载的 `res://` 路径；`sources` 中记录的原作者 `D:\...` 路径仅用于记录素材来源，不是运行依赖。不要要求用户创建这些旧目录，也不要把运行路径替换成旧的绝对路径。原始生成任务记录、下载链接也不是启动游戏的前置条件。
+
+当前主场景 `World/GroundDressing` 的历史参数为 `grass_density = 1.0`、`flower_density = 1.55`、`pebble_density = 0.42`、`grass_variants = 31`。花的变种掩码默认是 63；草的 6 张资源都存在，但掩码 31 只选择前 5 种，这是场景设置，不是漏传第 6 张。
+
+撒布还会受到区域的 `enabled`、`categories`、`density_multiplier`、变种掩码，以及地形可种植范围影响；道路和水面不会铺满花草。排查时先读取现有参数，不要为了让截图出现花草就随意提高密度、改地形或覆盖历史场景。
+
+### 4. 运行并报告实际结果
+
+从仓库根目录执行：
+
+```text
+godot --headless --single-threaded-scene --editor --import --path demoWithMeowa/1
+godot --path demoWithMeowa/1
+```
+
+第一条只进行资源导入，**不会显示游戏画面**。第二条打开实际游戏；也可在编辑器中导入上述工程后按 F5。Godot 可执行文件不在 PATH 时，使用本机实际安装路径，勿照抄原作者电脑路径。
+
+确认窗口标题为“四境 · HD-2D”，出生人物穿黄色上衣，附近有霓虹建筑，右前方有白、粉、紫花簇与绿草。按 D 向右走可继续经过花草区域并到达桥边。与本文顶部实机截图及原视频对照。
+
+如果仍然没有花草，先收集 Godot 版本、渲染方式、实际项目绝对路径、实际运行场景，以及资源导入和运行时的首条错误。查看 Remote 场景树的 `World/GroundDressing/Layers/flowers`，必要时汇总其批量节点的 `multimesh.instance_count`；脚本中的 `instance_count` 是所有类别合计，不能直接当作花朵数量。
+
+向用户报告时区分：**文件已存在、资源导入通过、花草实例生成、实际画面可见**。仅凭无界面启动退出码为 0，不能声称画面中已经显示花草。若实际打开的是 `benchmark/godot/scenes/main.tscn` 或单独的子场景，应先切回正确工程和默认主场景，再判断问题。
+
+### 5. GitHub 上的资源完整性核对
+
+2026-10-25 已通过 GitHub 文件树核对提交 `8788a39e388cceb8925dfe11459af33eefbe73dd`：远端全部 **448 个文件**的 Git blob 编号与本地该提交一致；清单中的 **18 张贴图**同时通过远端 blob 比对和本地清单 SHA-256 校验。主工程配置、完整场景、地形数据、花草生成及区域脚本、植物着色器均在远端。这次后续提交补充本文指引，未改动游戏场景和素材。
+
 ## 版本来源
 
 - 视频发布日期：**2026-10-11 00:58:49（UTC+8）**。
